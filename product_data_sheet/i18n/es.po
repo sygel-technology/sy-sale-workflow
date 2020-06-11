@@ -1,0 +1,48 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_data_sheet
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-11 09:59+0000\n"
+"PO-Revision-Date: 2020-06-11 12:00+0200\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: product_data_sheet
+#: model:ir.ui.view,arch_db:product_data_sheet.data_sheet_product_normal_form_view
+msgid "Attach a file"
+msgstr "Adjuntar un archivo"
+
+#. module: product_data_sheet
+#: model:ir.ui.view,arch_db:product_data_sheet.data_sheet_email_compose_message_wizard_form
+msgid "Attach data sheets"
+msgstr "Adjuntar hojas de datos"
+
+#. module: product_data_sheet
+#: model:ir.ui.view,arch_db:product_data_sheet.data_sheet_product_normal_form_view
+msgid "Data Sheets"
+msgstr "Hojas de datos"
+
+#. module: product_data_sheet
+#: model:ir.model,name:product_data_sheet.model_mail_compose_message
+msgid "Email composition wizard"
+msgstr "Asistente para composición de correo"
+
+#. module: product_data_sheet
+#: model:ir.model,name:product_data_sheet.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: product_data_sheet
+#: model:ir.model.fields,field_description:product_data_sheet.field_mail_compose_message_check_add_product_data_sheets
+msgid "check data sheets"
+msgstr "verificar las hojas de datos"
