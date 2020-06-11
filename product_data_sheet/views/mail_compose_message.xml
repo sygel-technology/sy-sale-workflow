@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 Valentin Vinagre <valentin.vinagre@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="data_sheet_email_compose_message_wizard_form" model="ir.ui.view">
+        <field name="name">data.sheet.email.compose.message.wizard.form</field>
+        <field name="model">mail.compose.message</field>
+        <field name="inherit_id" ref="mail.email_compose_message_wizard_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='res_id']" position="after">
+                <field name="check_add_product_data_sheets" invisible="1"/>
+            </xpath>
+            <xpath expr="//button[@name='save_as_template']" position="before">
+                <button type="object" name="add_product_data_sheets" string="Attach data sheets" class="pull-right btn-default" attrs="{'invisible': [('check_add_product_data_sheets', '=', False)]}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
