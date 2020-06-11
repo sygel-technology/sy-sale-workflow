@@ -50,6 +50,6 @@ Maintainer
 This module is maintained by Sygel.
 
 
-This module is part of the `Sygel/sy-partner-contact <https://github.com/sygel-technology/sy-sale-workflow>`_.
+This module is part of the `Sygel/sy-sale-workflow <https://github.com/sygel-technology/sy-sale-workflow>`_.
 
 To contribute to this module, please visit https://github.com/sygel-technology.
