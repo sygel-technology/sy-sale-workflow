@@ -1,0 +1,114 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_document_condition
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-11 12:10+0000\n"
+"PO-Revision-Date: 2020-06-11 14:13+0200\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: ca_ES\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: sale_document_condition
+#: model:ir.model.fields,field_description:sale_document_condition.field_sale_order_condition_body_html
+msgid "Body"
+msgstr "Missatge"
+
+#. module: sale_document_condition
+#: model:ir.actions.act_window,help:sale_document_condition.sale_order_conditions_action
+msgid "Click to add a Sale Conditions."
+msgstr "Feu clic per afegir condicions de venda."
+
+#. module: sale_document_condition
+#: model:ir.model.fields,field_description:sale_document_condition.field_sale_order_condition_company_id
+msgid "Company"
+msgstr "Companyia"
+
+#. module: sale_document_condition
+#: model:ir.ui.view,arch_db:sale_document_condition.sale_order_conditions_view_form
+msgid "Content"
+msgstr "Contingut"
+
+#. module: sale_document_condition
+#: model:ir.model.fields,field_description:sale_document_condition.field_sale_order_condition_create_uid
+msgid "Created by"
+msgstr "Creat per"
+
+#. module: sale_document_condition
+#: model:ir.model.fields,field_description:sale_document_condition.field_sale_order_condition_create_date
+msgid "Created on"
+msgstr "Creat el"
+
+#. module: sale_document_condition
+#: model:ir.model.fields,field_description:sale_document_condition.field_sale_order_condition_default
+msgid "Default"
+msgstr "Per defecte"
+
+#. module: sale_document_condition
+#: model:ir.model.fields,field_description:sale_document_condition.field_sale_order_condition_display_name
+msgid "Display Name"
+msgstr "Mostrar Nom"
+
+#. module: sale_document_condition
+#: model:ir.model.fields,field_description:sale_document_condition.field_sale_order_condition_id
+msgid "ID"
+msgstr "ID"
+
+#. module: sale_document_condition
+#: model:ir.model.fields,field_description:sale_document_condition.field_sale_order_condition___last_update
+msgid "Last Modified on"
+msgstr "Última modificació el"
+
+#. module: sale_document_condition
+#: model:ir.model.fields,field_description:sale_document_condition.field_sale_order_condition_write_uid
+msgid "Last Updated by"
+msgstr "Última actualització per"
+
+#. module: sale_document_condition
+#: model:ir.model.fields,field_description:sale_document_condition.field_sale_order_condition_write_date
+msgid "Last Updated on"
+msgstr "Última actualització el"
+
+#. module: sale_document_condition
+#: model:ir.model.fields,field_description:sale_document_condition.field_sale_order_condition_name
+msgid "Name"
+msgstr "Nom"
+
+#. module: sale_document_condition
+#: code:addons/sale_document_condition/models/sale_order_condition.py:49
+#, python-format
+msgid "Only can exist one default sale condition by company."
+msgstr "Només pot existir una condició de venda d'omissió per companyia."
+
+#. module: sale_document_condition
+#: model:ir.model,name:sale_document_condition.model_sale_order
+msgid "Quotation"
+msgstr "Pressupost"
+
+#. module: sale_document_condition
+#: model:ir.actions.act_window,name:sale_document_condition.sale_order_conditions_action
+#: model:ir.model.fields,field_description:sale_document_condition.field_sale_order_sale_conditions
+#: model:ir.ui.menu,name:sale_document_condition.sale_order_conditions_menu
+#: model:ir.ui.view,arch_db:sale_document_condition.sale_order_conditions_view_form
+#: model:ir.ui.view,arch_db:sale_document_condition.sale_order_conditions_view_tree
+msgid "Sale Conditions"
+msgstr "Condicions de venta"
+
+#. module: sale_document_condition
+#: code:addons/sale_document_condition/models/sale_order_condition.py:58
+#, python-format
+msgid "This Condition already exists."
+msgstr "Aquest tipus ja existeix."
+
+#. module: sale_document_condition
+#: model:ir.model,name:sale_document_condition.model_sale_order_condition
+msgid "sale order document conditions"
+msgstr "condicions de venta"

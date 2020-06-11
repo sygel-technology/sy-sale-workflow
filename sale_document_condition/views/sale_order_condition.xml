@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 Valentin Vinagre <valentin.vinagre@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="sale_order_conditions_view_form" model="ir.ui.view">
+        <field name="name">sale.order.conditions.view.form</field>
+        <field name="model">sale.order.condition</field>
+        <field name="arch" type="xml">
+            <form string="Sale Conditions">
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only"/>
+                        <h1><field name="name" required="1"/></h1>
+                        <group>
+                            <field name="default"/>
+                            <field name="company_id" groups="base.group_multi_company" options="{'no_create': True}"/>
+                        </group>
+                    </div>
+                    <notebook>
+                        <page string="Content">
+                            <field name="body_html" widget="html" options="{'style-inline': true}"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="sale_order_conditions_view_tree" model="ir.ui.view">
+        <field name="name">sale.order.conditions.view.tree</field>
+        <field name="model">sale.order.condition</field>
+        <field name="arch" type="xml">
+            <tree string="Sale Conditions">
+                <field name="name"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="sale_order_conditions_action" model="ir.actions.act_window">
+        <field name="name">Sale Conditions</field>
+        <field name="res_model">sale.order.condition</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+            Click to add a Sale Conditions.
+          </p>
+        </field>
+    </record>
+
+    <menuitem
+        id="sale_order_conditions_menu"
+        parent="sale.menu_sale_config"
+        action="sale_document_condition.sale_order_conditions_action"
+        sequence="99"
+        name="Sale Conditions"
+    />
+</odoo>
