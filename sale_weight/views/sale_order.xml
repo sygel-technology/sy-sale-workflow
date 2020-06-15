@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 Valentin Vinagre <valentin.vinagre@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="sale_weight_view_order_form" model="ir.ui.view">
+        <field name="name">sale.weight.view.order.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']/form//field[@name='price_unit']" position="before">
+                <field name='weight'/>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree//field[@name='price_unit']" position="before">
+                <field name='weight'/>
+            </xpath>
+            <xpath expr="//group[@name='sale_shipping']" position="inside">
+                <field name="total_weight"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
