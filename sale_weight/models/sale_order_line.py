@@ -17,5 +17,8 @@ class SaleOrderLine(models.Model):
 
     @api.depends('product_id', 'product_uom_qty')
     def _compute_weight(self):
-        for line in self.filtered('product_id'):
-            line.weight = line.product_id.weight * line.product_uom_qty
+        for line in self:
+            weight = 0.0
+            if line.product_id:
+                weight = line.product_id.weight * line.product_uom_qty
+            line.weight = weight

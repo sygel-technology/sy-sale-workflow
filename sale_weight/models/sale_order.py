@@ -18,4 +18,4 @@ class SaleOrder(models.Model):
     @api.depends('order_line.weight')
     def _compute_total_weight(self):
         for sel in self:
-            sel.total_weight = sum(sel.mapped('order_line.weight'))
+            sel.total_weight = sum(sel.order_line.filtered('product_id').mapped('weight'))
