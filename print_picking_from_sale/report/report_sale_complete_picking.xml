@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2022 Manuel Regidor <manuel.regidor@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template id="sale_complete_picking" inherit_id="sale.report_saleorder_document" primary="True">
+        <xpath expr="//h2/t[1]" position="attributes">
+            <attribute name="t-if">False</attribute>
+        </xpath>
+        <xpath expr="//h2/t[2]" position="attributes">
+            <attribute name="t-if">False</attribute>
+        </xpath>
+        <xpath expr="//h2/span" position="attributes">
+            <attribute name="t-if">False</attribute>
+        </xpath>
+        <xpath expr="//h2" position="inside">
+            <span t-if="doc.complete_picking_id" t-field="doc.complete_picking_id.name"/>
+            <span t-elif="doc.complete_picking_name" t-field="doc.complete_picking_name"/>
+            <span t-else=""></span>
+        </xpath>
+    </template>
+    <template id="report_sale_complete_picking" name="Complete Picking" inherit_id="sale.report_saleorder" primary="True">
+        <xpath expr="//t[@t-call='sale.report_saleorder_document']" position="attributes">
+            <attribute name="t-call">print_picking_from_sale.sale_complete_picking</attribute>
+        </xpath>
+    </template>
+</odoo>
