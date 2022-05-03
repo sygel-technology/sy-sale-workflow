@@ -10,7 +10,7 @@
             <xpath expr="//page[@name='other_information']" position="inside">
                 <group name="print_picking" string="Print Picking">
                     <group>
-                        <field name="complete_picking_id"/>
+                        <field name="complete_picking_id" options="{'no_create': True}"/>
                         <field name="complete_picking_name"/>
                         <field name="picking_ids" invisible="1"/>
                     </group>
