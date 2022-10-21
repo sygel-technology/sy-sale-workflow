@@ -1,0 +1,46 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* automatic_monthly_invoicing
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-21 11:28+0000\n"
+"PO-Revision-Date: 2022-10-21 11:28+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: automatic_monthly_invoicing
+#: model:ir.model.fields,help:automatic_monthly_invoicing.field_res_partner__monthly_invoicing
+#: model:ir.model.fields,help:automatic_monthly_invoicing.field_res_users__monthly_invoicing
+msgid "A single invoice at the end of the month."
+msgstr "Una única factura al final de cada mes."
+
+#. module: automatic_monthly_invoicing
+#: model:ir.model.fields,field_description:automatic_monthly_invoicing.field_res_partner__monthly_invoicing
+#: model:ir.model.fields,field_description:automatic_monthly_invoicing.field_res_users__monthly_invoicing
+#: model:ir.model.fields,field_description:automatic_monthly_invoicing.field_sale_order__monthly_invoicing
+msgid "Automatic Monthly Invoicing"
+msgstr "Facturación mensual automática"
+
+#. module: automatic_monthly_invoicing
+#: model:ir.actions.server,name:automatic_monthly_invoicing.automatic_monthly_invoicing_cron_ir_actions_server
+#: model:ir.cron,cron_name:automatic_monthly_invoicing.automatic_monthly_invoicing_cron
+#: model:ir.cron,name:automatic_monthly_invoicing.automatic_monthly_invoicing_cron
+msgid "Automatic Monthly Invoicing Scheduled Action"
+msgstr "Facturación Mensual Automática Accion Programada"
+
+#. module: automatic_monthly_invoicing
+#: model:ir.model,name:automatic_monthly_invoicing.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: automatic_monthly_invoicing
+#: model:ir.model,name:automatic_monthly_invoicing.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"

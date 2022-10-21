@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo noupdate="1">
+    <record id="automatic_monthly_invoicing_cron" model="ir.cron">
+        <field name="name">Automatic Monthly Invoicing Scheduled Action</field>
+        <field name="model_id" ref="sale.model_sale_order"/>
+        <field name="state">code</field>
+        <field name="code">model.create_monthly_invoices(validate=False)</field>
+        <field name="user_id" ref="base.user_root"/>
+        <field name="nextcall" eval="(DateTime.now() + relativedelta(months=1)).replace(day=1, hour=0, minute=0, second=0)"/>
+        <field name="interval_number">1</field>
+        <field name="interval_type">months</field>
+        <field name="numbercall">-1</field>
+        <field name="doall">1</field>
+    </record>
+</odoo>

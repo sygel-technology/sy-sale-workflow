@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2022 Angel Garcia de la Chica Herrera <angel.garcia@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="automatic_monthly_invoicing_view_order_form" model="ir.ui.view">
+        <field name="name">automatic.monthly.invoicing.view.order.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+             <xpath expr="//page[@name='other_information']//field[@name='invoice_status']" position="after">
+                <field name="monthly_invoicing" readonly="1"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
