@@ -11,5 +11,6 @@ addon | version | summary
 [free_delivery_untaxed](free_delivery_untaxed/) | 15.0.1.0.0 | Decide if delivery is free based on untaxed price
 [automatic_monthly_invoicing](automatic_monthly_invoicing/) | 15.0.1.0.0 | Group sales orders on the same invoice for the partners you set up automatically at the beginning of each month.
 [sale_order_high_priority](sale_order_high_priority/) | 15.0.1.0.0 | Three levels of priority in sale orders
+[crm_claim_sale](crm_claim_sale/) | 15.0.1.0.0 | Create Sales from a Claim.
 
 [//]: # (end addons)
