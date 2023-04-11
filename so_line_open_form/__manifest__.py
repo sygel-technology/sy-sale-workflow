@@ -3,7 +3,7 @@
 
 {
     'name': 'Sale Order Line Open Form',
-    'version': '15.0.1.0.0',
+    'version': '15.0.1.0.1',
     'author': 'Sygel',
     'category': 'Sale',
     'summary': "Open form view when click on sale order line.",
