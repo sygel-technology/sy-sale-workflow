@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+"sale_order_required_rule_access","sale.order.required.rule.access","model_sale_order_required_rule","sales_team.group_sale_salesman",1,0,0,0
+"sale_order_required_rule_sale_manage","sale.order.required.rule.sale.manage","model_sale_order_required_rule","sales_team.group_sale_manager",1,1,1,1
+"sale_order_required_rule_manage","sale.order.required.rule.manage","model_sale_order_required_rule","base.group_no_one",1,1,1,1
