@@ -55,7 +55,6 @@ class AutomaticWorkflowJob(models.Model):
     @api.model
     def run_with_workflow(self, sale_workflow):
         workflow_domain = [("workflow_process_id", "=", sale_workflow.id)]
-        logging.warning(sale_workflow.force_invoice_order_filter_id.domain)
         if sale_workflow.force_invoice:
             self._force_invoice_orders(
                 safe_eval(
