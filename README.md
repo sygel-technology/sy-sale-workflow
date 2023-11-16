@@ -16,5 +16,6 @@ addon | version | summary
 [so_line_open_form](so_line_open_form/) | 15.0.1.0.0 | Open form view when click on sale order line
 [sale_automatic_workflow_order_type](sale_automatic_workflow_order_type/) | 15.0.1.0.0 | Sale Automatic Workflow Order Type.
 [so_sequence_duplicate_order](so_sequence_duplicate_order/) | 15.0.1.0.0 | Duplicate sales orders keeping the original name and adding the copy number.
+[so_line_product_template_visibility/](so_line_product_template_visibility/) | 15.0.1.0.0 | Show/Hide Product and Product Variant fields on sales order line.
 
 [//]: # (end addons)
