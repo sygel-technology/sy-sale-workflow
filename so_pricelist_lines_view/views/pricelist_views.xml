@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2023 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="so_pricelist_lines_view" model="ir.ui.view">
+        <field name="name">so.pricelist.lines.view</field>
+        <field name="model">product.pricelist.item</field>
+        <field name="arch" type="xml">
+            <tree string="Pricelist Lines">
+                <field name="pricelist_id"/>
+                <field name="name"/>
+                <field name="min_quantity"/>
+                <field name="price"/>
+                <field name="date_start"/>
+                <field name="date_end"/>
+            </tree>
+        </field>
+    </record>
+        <record id="so_pricelist_lines_view_action" model="ir.actions.act_window">
+        <field name="name">Pricelist Lines</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.pricelist.item</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="so_pricelist_lines_view" />
+    </record>
+    <menuitem
+        id="menu_so_pricelist_lines_view"
+        action="so_pricelist_lines_view_action"
+        parent="sale.product_menu_catalog"
+        sequence="3"
+    />
+</odoo>
+
