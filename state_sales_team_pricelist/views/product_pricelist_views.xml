@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2023 Manuel Regidor <manuel.regidor@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="state_sales_team_pricelist_product_pricelist_view" model="ir.ui.view">
+        <field name="name">state.sales.team.pricelist.product.pricelist.view</field>
+        <field name="inherit_id" ref="product.product_pricelist_view" />
+        <field name="model">product.pricelist</field>
+        <field name="arch" type="xml">
+            <page name="pricelist_config" position="inside">
+                <group string="Filter">
+                    <group>
+                        <field name="state_ids" widget="many2many_tags"/>
+                        <field name="team_ids" widget="many2many_tags"/>
+                    </group>
+                </group>
+            </page>
+        </field>
+    </record>
+</odoo>
