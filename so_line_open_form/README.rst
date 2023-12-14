@@ -2,11 +2,11 @@
 	:target: http://www.gnu.org/licenses/agpl
 	:alt: License: AGPL-3
 
-========================
-Sale Order High Priority
-========================
+=========================
+Sale Order Line Open Form
+=========================
 
-This modules adds an extra level of priority in sale orders, so after it is installed, there are three levels.
+This module allow you to open form view when click on sale order line.
 
 
 Installation
@@ -14,7 +14,7 @@ Installation
 
 To install this module, you need to:
 
-#. Just install.
+#. Only install
 
 
 Configuration
@@ -22,7 +22,7 @@ Configuration
 
 To configure this module, you need to:
 
-#. No configuration needed.
+#. Nothing
 
 
 Usage
@@ -30,19 +30,11 @@ Usage
 
 To use this module, you need to:
 
-#. No usage instructions needed
+#. Go to the Sales module.
+#. Create a new quotation.
+#. Add or edit a sale order line.
 
-
-ROADMAP
-=======
-
-It only works with serial numbers, not lots.
-
-[ Enumerate known caveats and future potential improvements.
-  It is mostly intended for end-users, and can also help
-  potential new contributors discovering new features to implement. ]
-
-* ...
+You will see how the form view of the sale order line opens up.
 
 
 Bug Tracker
@@ -64,11 +56,11 @@ Authors
 
 * Sygel, Odoo Community Association (OCA)
 
-
 Contributors
 ~~~~~~~~~~~~
 
 * Manuel Regidor <manuel.regidor@sygel.es>
+* Ángel García de la Chica Herrera <angel.garcia@sygel.es>
 
 
 Maintainer
@@ -76,6 +68,9 @@ Maintainer
 
 This module is maintained by Sygel.
 
+.. image:: https://www.sygel.es/logo.png
+   :alt: Sygel
+   :target: https://www.sygel.es
 
 This module is part of the `Sygel/sy-sale-workflow <https://github.com/sygel-technology/sy-sale-workflow>`_.
 
