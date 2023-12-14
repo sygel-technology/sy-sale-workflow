@@ -7,6 +7,6 @@ Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
-[](/) | 16.0.1.0.0 |
+[so_line_open_form](so_line_open_form/) | 16.0.1.0.0 | Open form view when click on sale order line.
 
 [//]: # (end addons)
