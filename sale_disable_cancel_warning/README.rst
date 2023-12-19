@@ -22,7 +22,7 @@ Configuration
 
 To configure this module, you need to:
 
-#. Go to Settings / Sales / Quotations & Orders and mark/unmark the Disable Cancel Warning option
+#. Go to Sales / Settings/ Quotations & Orders and mark/unmark the Disable Cancel Warning option
 
 
 Usage
@@ -35,10 +35,6 @@ To use this module, you need to:
 
 ROADMAP
 =======
-
-[ Enumerate known caveats and future potential improvements.
-  It is mostly intended for end-users, and can also help
-  potential new contributors discovering new features to implement. ]
 
 * ...
 
