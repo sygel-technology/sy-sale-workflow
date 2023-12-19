@@ -4,10 +4,10 @@
 from odoo import models, fields
 
 
-class ResConfigSettings(models.TransientModel):
-    _inherit = 'res.config.settings'
+class ResCompany(models.Model):
+    _inherit = 'res.company'
 
     disable_cancel_warning = fields.Boolean(
         string='Disable Cancel Warning',
-        related='company_id.disable_cancel_warning',
+        default=True,
     )
