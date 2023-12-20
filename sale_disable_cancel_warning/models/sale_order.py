@@ -8,8 +8,6 @@ class SaleOrder(models.Model):
     _inherit = 'sale.order'
 
     def action_cancel(self):
-        if self.env['ir.config_parameter'].sudo().get_param(
-            'sale_disable_cancel_warning.disable_cancel_warning'
-        ):
+        if True in self.mapped('company_id.disable_cancel_warning'):
             self = self.with_context(disable_cancel_warning=True)
         return super().action_cancel()
