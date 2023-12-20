@@ -10,4 +10,5 @@ class ResConfigSettings(models.TransientModel):
     disable_cancel_warning = fields.Boolean(
         string='Disable Cancel Warning',
         related='company_id.disable_cancel_warning',
+        readonly=False,
     )
