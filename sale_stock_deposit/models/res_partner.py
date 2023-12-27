@@ -26,7 +26,7 @@ class Partner(models.Model):
 
     def action_create_stock_deposit_wizard(self):
         result = self.env["ir.actions.act_window"]._for_xml_id(
-            "stock_deposit.res_partner_stock_deposit_creation_wizard_action"
+            "sale_stock_deposit.res_partner_stock_deposit_creation_wizard_action"
         )
         result["context"] = dict(self.env.context, default_partner_id=self.id)
         return result
