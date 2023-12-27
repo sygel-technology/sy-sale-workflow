@@ -2,9 +2,9 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 {
-    "name": "Stock Deposit",
-    "summary": "Stock deposit",
-    "version": "16.0.1.0.0",
+    "name": "Sale Stock Deposit",
+    "summary": "Sale Stock deposit",
+    "version": "16.0.1.1.0",
     "license": "AGPL-3",
     "author": "Sygel",
     "category": "Stock",
@@ -23,5 +23,5 @@
         "wizards/res_partner_stock_deposit_creation_wizard_views.xml"
     ],
     "installable": True,
-    "post_init_hook": "_post_init_stock_deposit",
+    "post_init_hook": "_post_init_sale_stock_deposit",
 }

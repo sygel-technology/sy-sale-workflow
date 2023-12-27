@@ -2,9 +2,9 @@
 	:target: http://www.gnu.org/licenses/agpl
 	:alt: License: AGPL-3
 
-=============
-Stock Deposit
-=============
+==================
+Sale Stock Deposit
+==================
 
 This module allows you to create and control deposits for customers. 
 With the deposits you will be able to create sales and pickings to customer deposits and subsequently, create sales and pickings from the deposits to the customer.
@@ -42,7 +42,7 @@ Usage
 
 To use this module, you need to:
 
-To create a new 'Deposit Sell':
+To create a new 'Deposit Sale':
 
 #. Create a new quotation.
 #. Select a customer who has a deposit.
@@ -50,7 +50,7 @@ To create a new 'Deposit Sell':
 #. Select the warehouse where the customer's deposit is located. 
 #. Add a new product and Select the Route: '(<warehouse_name>) / Deposit Sale'
 #. Confirm the Sale
-#. Validate the generated picking
+#. Validate the generated picking. Remember to set the done quantities manually.
 
 To create a new 'Delivery Stock Deposit':
 
