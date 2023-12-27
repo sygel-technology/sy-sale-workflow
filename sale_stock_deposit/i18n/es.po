@@ -1,0 +1,332 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_stock_deposit
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-20 14:55+0000\n"
+"PO-Revision-Date: 2023-12-20 14:55+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_stock_deposit
+#. odoo-python
+#: code:addons/sale_stock_deposit/models/stock_warehouse.py:0
+#, python-format
+msgid "({}) / Delivery Stock Deposit"
+msgstr "({}) / Entrega depósito"
+
+#. module: sale_stock_deposit
+#. odoo-python
+#: code:addons/sale_stock_deposit/models/stock_warehouse.py:0
+#, python-format
+msgid "({}) / Deposit Sell"
+msgstr "({}) / Venta a depósito"
+
+#. module: sale_stock_deposit
+#. odoo-python
+#: code:addons/sale_stock_deposit/models/stock_warehouse.py:0
+#, python-format
+msgid "({}) Delivery Stock Deposit"
+msgstr "({}) Entrega depósito"
+
+#. module: sale_stock_deposit
+#. odoo-python
+#: code:addons/sale_stock_deposit/models/stock_warehouse.py:0
+#, python-format
+msgid "({}) Deposit Sale"
+msgstr "({}) Venta a depósito"
+
+#. module: sale_stock_deposit
+#: model_terms:ir.ui.view,arch_db:sale_stock_deposit.res_partner_stock_deposit_creation_wizard_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: sale_stock_deposit
+#: model:ir.model.fields,help:sale_stock_deposit.field_stock_location__deposit_location
+#: model:ir.model.fields,help:sale_stock_deposit.field_stock_route__deposit_operation
+msgid "Check this box to allow using this location to put deposit goods."
+msgstr ""
+"Marque esta casilla para permitir el uso de esta ubicación para depositar "
+"mercancías."
+
+#. module: sale_stock_deposit
+#: model:ir.model,name:sale_stock_deposit.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: sale_stock_deposit
+#: model_terms:ir.ui.view,arch_db:sale_stock_deposit.res_partner_stock_deposit_creation_wizard_form
+msgid "Create"
+msgstr "Crear"
+
+#. module: sale_stock_deposit
+#: model_terms:ir.ui.view,arch_db:sale_stock_deposit.stock_deposit_view_partner_stock_form
+msgid "Create New deposit"
+msgstr "Crear nuevo depósito"
+
+#. module: sale_stock_deposit
+#: model:ir.actions.act_window,name:sale_stock_deposit.res_partner_stock_deposit_creation_wizard_action
+msgid "Create Stock Deposit"
+msgstr "Crear depósito"
+
+#. module: sale_stock_deposit
+#: model:ir.model.fields,field_description:sale_stock_deposit.field_res_partner_stock_deposit_creation_wizard__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: sale_stock_deposit
+#: model:ir.model.fields,field_description:sale_stock_deposit.field_res_partner_stock_deposit_creation_wizard__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: sale_stock_deposit
+#: model:ir.model.fields.selection,name:sale_stock_deposit.selection__stock_route__deposit_operation_type__delivery_deposit
+msgid "Delivery Stock Deposit"
+msgstr "Entrega depósito"
+
+#. module: sale_stock_deposit
+#: model_terms:ir.ui.view,arch_db:sale_stock_deposit.stock_location_route_form_view_deposit
+msgid "Deposit"
+msgstr "Depósito"
+
+#. module: sale_stock_deposit
+#: model:ir.model.fields,field_description:sale_stock_deposit.field_res_partner_stock_deposit_creation_wizard__deposit_name
+#: model_terms:ir.ui.view,arch_db:sale_stock_deposit.stock_deposit_view_partner_stock_form
+msgid "Deposit Name"
+msgstr "Nombre del depósito"
+
+#. module: sale_stock_deposit
+#: model:ir.model.fields,field_description:sale_stock_deposit.field_stock_route__deposit_operation_type
+msgid "Deposit Operation Type"
+msgstr "Tipo de operación de depósito"
+
+#. module: sale_stock_deposit
+#: model:ir.model.fields,field_description:sale_stock_deposit.field_stock_route__deposit_operation
+msgid "Deposit Operation?"
+msgstr "¿Operación de depósito?"
+
+#. module: sale_stock_deposit
+#: model:ir.model.fields.selection,name:sale_stock_deposit.selection__stock_route__deposit_operation_type__deposit
+msgid "Deposit Sell"
+msgstr "Venta a depósito"
+
+#. module: sale_stock_deposit
+#. odoo-python
+#: code:addons/sale_stock_deposit/wizards/res_partner_stock_deposit_creation_wizard.py:0
+#, python-format
+msgid "Deposit [{}] {}"
+msgstr "Depósito [{}] {}"
+
+#. module: sale_stock_deposit
+#. odoo-python
+#: code:addons/sale_stock_deposit/wizards/res_partner_stock_deposit_creation_wizard.py:0
+#, python-format
+msgid "Deposit {}"
+msgstr "Depósito {}"
+
+#. module: sale_stock_deposit
+#: model_terms:ir.ui.view,arch_db:sale_stock_deposit.stock_deposit_view_partner_stock_form
+msgid "Deposits"
+msgstr "Depósitos"
+
+#. module: sale_stock_deposit
+#: model:ir.model.fields,field_description:sale_stock_deposit.field_res_partner__deposit_count
+#: model:ir.model.fields,field_description:sale_stock_deposit.field_res_users__deposit_count
+msgid "Deposits Counter"
+msgstr "Contador de depósitos"
+
+#. module: sale_stock_deposit
+#. odoo-python
+#: code:addons/sale_stock_deposit/models/res_partner.py:0
+#, python-format
+msgid "Deposits Status"
+msgstr "Estado de los depósitos"
+
+#. module: sale_stock_deposit
+#: model:ir.model.fields,field_description:sale_stock_deposit.field_res_partner_stock_deposit_creation_wizard__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: sale_stock_deposit
+#: model:ir.model.fields,field_description:sale_stock_deposit.field_res_partner_stock_deposit_creation_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: sale_stock_deposit
+#: model:ir.model,name:sale_stock_deposit.model_stock_location
+msgid "Inventory Locations"
+msgstr "Ubicaciones de inventario"
+
+#. module: sale_stock_deposit
+#: model:ir.model,name:sale_stock_deposit.model_stock_route
+msgid "Inventory Routes"
+msgstr "Rutas de inventario"
+
+#. module: sale_stock_deposit
+#: model:ir.model.fields,field_description:sale_stock_deposit.field_stock_location__deposit_location
+msgid "Is a Deposit Location?"
+msgstr "¿Es una ubicación de depósito"
+
+#. module: sale_stock_deposit
+#: model:ir.model.fields,field_description:sale_stock_deposit.field_res_partner_stock_deposit_creation_wizard____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: sale_stock_deposit
+#: model:ir.model.fields,field_description:sale_stock_deposit.field_res_partner_stock_deposit_creation_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Última actulización por"
+
+#. module: sale_stock_deposit
+#: model:ir.model.fields,field_description:sale_stock_deposit.field_res_partner_stock_deposit_creation_wizard__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: sale_stock_deposit
+#: model:ir.model.fields,field_description:sale_stock_deposit.field_res_partner_stock_deposit_creation_wizard__stock_deposit_id
+msgid "Location"
+msgstr "Ubicación"
+
+#. module: sale_stock_deposit
+#: model:ir.model.fields,field_description:sale_stock_deposit.field_stock_location__partner_id
+msgid "Owner"
+msgstr "Propietario"
+
+#. module: sale_stock_deposit
+#: model:ir.model.fields,field_description:sale_stock_deposit.field_res_partner_stock_deposit_creation_wizard__partner_id
+msgid "Partner"
+msgstr "Cliente"
+
+#. module: sale_stock_deposit
+#: model:ir.model,name:sale_stock_deposit.model_res_partner_stock_deposit_creation_wizard
+msgid "Partner Stock Deposit Creation Wizard"
+msgstr "Asistente de creación de depósito"
+
+#. module: sale_stock_deposit
+#: model:ir.model,name:sale_stock_deposit.model_procurement_group
+msgid "Procurement Group"
+msgstr "Grupo de abastecimiento"
+
+#. module: sale_stock_deposit
+#: model:ir.model.fields,field_description:sale_stock_deposit.field_sale_order_line__route_id
+msgid "Route"
+msgstr "Ruta"
+
+#. module: sale_stock_deposit
+#. odoo-python
+#: code:addons/sale_stock_deposit/models/sale_order.py:0
+#, python-format
+msgid ""
+"Route's warehouse '{}' for product '{}' is not the same as warehouse '{}' "
+"selected for the sale order."
+msgstr ""
+"El almacén '{}' de la ruta para el producto '{}' no es el mismo que el "
+"almacén '{}' seleccionado para el pedido de venta."
+
+#. module: sale_stock_deposit
+#: model:ir.model,name:sale_stock_deposit.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: sale_stock_deposit
+#: model:ir.model,name:sale_stock_deposit.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de pedido de venta"
+
+#. module: sale_stock_deposit
+#: model:ir.model.fields,field_description:sale_stock_deposit.field_res_partner__deposit_ids
+#: model:ir.model.fields,field_description:sale_stock_deposit.field_res_users__deposit_ids
+msgid "Stock Deposits"
+msgstr "Depósitos de Stock"
+
+#. module: sale_stock_deposit
+#: model:ir.model,name:sale_stock_deposit.model_stock_rule
+msgid "Stock Rule"
+msgstr "Regla de Inventario"
+
+#. module: sale_stock_deposit
+#. odoo-python
+#: code:addons/sale_stock_deposit/models/sale_order.py:0
+#, python-format
+msgid ""
+"The client '{}' in your location does not have enough stock. The stock "
+"virtual in the location is '{}' for the product '{}'"
+msgstr ""
+"El cliente '{}' de su localidad no dispone de existencias suficientes. El "
+"stock virtual en la ubicación es '{}' para el producto '{}'"
+
+#. module: sale_stock_deposit
+#. odoo-python
+#: code:addons/sale_stock_deposit/models/sale_order.py:0
+#, python-format
+msgid "The partner '{}' does not have a deposit location configured!"
+msgstr "¡El cliente '{}' no tiene configurada una ubicación de depósito!."
+
+#. module: sale_stock_deposit
+#. odoo-python
+#: code:addons/sale_stock_deposit/models/stock_location.py:0
+#, python-format
+msgid "There cannot be two Deposits with the same Partner and Warehouse."
+msgstr "No puede haber dos depósitos con el mismo cliente y Almacén."
+
+#. module: sale_stock_deposit
+#. odoo-python
+#: code:addons/sale_stock_deposit/models/stock_picking.py:0
+#, python-format
+msgid ""
+"This client in your location does not have enough stock. The stock virtual "
+"in the location is {}"
+msgstr ""
+"Este cliente en su ubicación no tiene suficiente stock. El stock virtual "
+"enla ubicación es {}"
+
+#. module: sale_stock_deposit
+#: model:ir.model,name:sale_stock_deposit.model_stock_picking
+msgid "Transfer"
+msgstr "Albarán"
+
+#. module: sale_stock_deposit
+#: model_terms:ir.ui.view,arch_db:sale_stock_deposit.stock_deposit_view_partner_stock_form
+msgid "View Deposit State"
+msgstr "Ver estado"
+
+#. module: sale_stock_deposit
+#: model:ir.model,name:sale_stock_deposit.model_stock_warehouse
+#: model:ir.model.fields,field_description:sale_stock_deposit.field_stock_route__warehouse_id
+msgid "Warehouse"
+msgstr "Almacén"
+
+#. module: sale_stock_deposit
+#. odoo-python
+#: code:addons/sale_stock_deposit/models/stock_warehouse.py:0
+#, python-format
+msgid "{} / Deposit"
+msgstr "{} / Depósito"
+
+#. module: sale_stock_deposit
+#. odoo-python
+#: code:addons/sale_stock_deposit/models/stock_location.py:0
+#, python-format
+msgid "{} Status"
+msgstr "{} Estado"
+
+#. module: sale_stock_deposit
+#. odoo-python
+#: code:addons/sale_stock_deposit/models/stock_warehouse.py:0
+#, python-format
+msgid "{}/ Deposit -> Customer"
+msgstr "{}/ Depósito -> Cliente"
+
+#. module: sale_stock_deposit
+#. odoo-python
+#: code:addons/sale_stock_deposit/models/stock_warehouse.py:0
+#, python-format
+msgid "{}/ Stock -> Deposit"
+msgstr "{}/ Stock -> Depósito"
