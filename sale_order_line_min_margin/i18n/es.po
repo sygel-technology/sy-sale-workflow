@@ -1,0 +1,67 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_order_line_min_margin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-05 11:57+0000\n"
+"PO-Revision-Date: 2024-01-05 13:00+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: sale_order_line_min_margin
+#: model:ir.model.fields,field_description:sale_order_line_min_margin.field_res_company__apply_so_line_min_margin
+#: model:ir.model.fields,field_description:sale_order_line_min_margin.field_res_config_settings__apply_so_line_min_margin
+msgid "Apply Sale Order Line Min. Margin"
+msgstr "Aplicar margen mínimo en líneas de pedido de venta"
+
+#. module: sale_order_line_min_margin
+#: model:ir.model,name:sale_order_line_min_margin.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: sale_order_line_min_margin
+#: model:ir.model,name:sale_order_line_min_margin.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de configuración"
+
+#. module: sale_order_line_min_margin
+#: model_terms:ir.ui.view,arch_db:sale_order_line_min_margin.sale_order_line_min_margin_res_config_settings_view_form
+msgid "If set, sale order lines minimum margin (in %)."
+msgstr "Si está activo, margen mínimo en las líneas de pedido de venta (en %)."
+
+#. module: sale_order_line_min_margin
+#: model:ir.model.fields,field_description:sale_order_line_min_margin.field_sale_order_line__margin_percent
+msgid "Margin (%)"
+msgstr "Margen (%)"
+
+#. module: sale_order_line_min_margin
+#: code:addons/sale_order_line_min_margin/models/sale_order_line.py:0
+#, python-format
+msgid "Margin Warning"
+msgstr "Aviso de margen"
+
+#. module: sale_order_line_min_margin
+#: model:ir.model.fields,field_description:sale_order_line_min_margin.field_res_company__so_line_min_margin
+#: model:ir.model.fields,field_description:sale_order_line_min_margin.field_res_config_settings__so_line_min_margin
+msgid "Sale Order Line Min. Margin (%)"
+msgstr "Margen mínimo en líneas de pedido de venta (%)"
+
+#. module: sale_order_line_min_margin
+#: model:ir.model,name:sale_order_line_min_margin.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de pedido de venta"
+
+#. module: sale_order_line_min_margin
+#: code:addons/sale_order_line_min_margin/models/sale_order_line.py:0
+#, python-format
+msgid "The minimum margin set in company is {}%"
+msgstr "El margen mínimo establecido en la compañía es {}%"
