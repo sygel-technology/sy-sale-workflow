@@ -30,7 +30,7 @@ class SaleOrder(models.Model):
                     origin = "{}, {}".format(
                         self.so_copy_origin_id.origin, name_origin
                     )
-            count = 1 + self.search_count([
+            count = 2 + self.search_count([
                 ('so_copy_origin_id', '=', origin_id)
             ])
             default.update({
