@@ -22,5 +22,6 @@ addon | version | summary
 [state_sales_team_pricelist/](state_sales_team_pricelist/) | 15.0.1.0.0 | Filter pricelist in sales by state and sales team.
 [so_sequence_confirmed_order_base/](so_sequence_confirmed_order_base/) | 15.0.1.0.0 | Different prefix to confirmed sales orders sequence.
 [so_sequence_confirmed_order_type/](so_sequence_confirmed_order_type/) | 15.0.1.0.0 | Different prefix to confirmed sales orders sequence by sale order type.
+[so_sequence_duplicate_confirmed_order_type/](so_sequence_duplicate_confirmed_order_type/) | 15.0.1.0.0 | Duplicate sale order sequence with differente prefix by sale order type.
 
 [//]: # (end addons)
