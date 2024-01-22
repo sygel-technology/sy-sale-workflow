@@ -12,6 +12,7 @@
     "application": False,
     "installable": True,
     "depends": [
+        "sale",
         "sale_margin",
     ],
     "data": [

@@ -28,9 +28,10 @@ To configure this module, you need to:
 Usage
 =====
 
-To use this module, you need to:
-
-#. No usage instructions needed.
+Change in unit price -> Margin update
+Change in discount -> Margin update
+Change in margin -> Unit price update
+Change in cost -> Pice update
 
 
 Bug Tracker
