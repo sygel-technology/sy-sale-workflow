@@ -1,0 +1,20 @@
+<odoo>
+<!-- Copyright 2024 Manuel Regidor <manuel.regidor@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+    <record id="sale_order_line_view_negative_margin_view_order_form" model="ir.ui.view">
+        <field name="name">sale.order.line.view.negative.margin.view.order.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']//form" position="inside">
+                <field name="negative_margin" invisible="1"/>
+            </xpath>
+            <xpath expr="//field[@name='order_line']//tree" position="inside">
+                <field name="negative_margin" invisible="1"/>
+            </xpath>
+            <xpath expr="//field[@name='order_line']//tree" position="attributes">
+                <attribute name="decoration-danger">negative_margin == True</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
