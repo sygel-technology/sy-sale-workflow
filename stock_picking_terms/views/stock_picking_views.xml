@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2024 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="stock_picking_terms_view_picking_form" model="ir.ui.view">
+        <field name="name">stock.picking.terms.view.picking.form</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='note']" position='after'>
+                <field name="show_terms" invisible="1"/>
+                <page string="Terms and Conditions" name="terms_and_conditions" attrs="{'invisible': [('show_terms', '=', False)]}">
+                    <field name="stock_picking_terms" placeholder="Add a Terms and conditions that will be printed on the Delivery Slip."/>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2024 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template
+        id="stock_picking_terms_report_delivery_document"
+        name="stock.picking.terms.report.delivery.document"
+        inherit_id="stock.report_delivery_document">
+        <xpath expr="//div[@name='signature']" position='after'>
+            <div name="terms_and_conditions" t-if="o.picking_type_id.show_terms and not is_html_empty(o.stock_picking_terms)">
+                <br/><br/>
+                <span t-field="o.stock_picking_terms" /><br/>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2024 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="stock_picking_terms_res_config_settings_view_form_inherit_account" model="ir.ui.view">
+        <field name="name">stock.picking.terms.res.config.settings.view.form.inherit.account</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="stock.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='reception_report']" position='after'>
+                <div class="col-12 col-lg-6 o_setting_box" id="terms_and_conditions" groups="stock.group_stock_manager">
+                    <div class="o_setting_right_pane">
+                        <label for="stock_picking_terms"/>
+                        <span class="fa fa-lg fa-building-o" title="Values set here are company-specific." aria-label="Values set here are company-specific." groups="base.group_multi_company" role="img"/>
+                        <div class="text-muted">
+                            Add your default terms &amp; conditions at the bottom of Delivery Slip reports depending on the type of operation.
+                        </div>
+                        <div class="content-group">
+                            <div class="mt16">
+                                <div>
+                                    <field name="stock_picking_terms" class="oe_account_terms mt-5 w-100" placeholder="Insert your terms &amp; conditions here..."/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
+
+
