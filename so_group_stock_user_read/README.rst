@@ -6,7 +6,7 @@
 Sale Order Group Stock User Read
 ================================
 
-This module creates a new permission group that allows you to go from sales to stock picking.
+This module creates a new permission group that allows you to go from sales to stock picking and see the 'Forecasted Quantity' and the 'Quantity on Hand' of the stock of the products from the tree view.
 
 
 Installation
@@ -35,7 +35,7 @@ To use this module, you need to:
 
 #. Go to Sales module
 #. Create new Sale
-#. Add a storable product
+#. Add a storable product by clicking on 'Search More...'' to view the 'Forecasted Quantity' and the 'Quantity on Hand' of the products.
 #. Confirm the sale
 #. Go to stosk picking by clicking on the delivery button
 
