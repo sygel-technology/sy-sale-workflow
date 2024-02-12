@@ -17,10 +17,10 @@ msgstr ""
 
 #. module: so_group_stock_user_read
 #: model:res.groups,comment:so_group_stock_user_read.group_stock_user_read
-msgid "Allows you to go from sales to stock picking.."
-msgstr "Perite navegar desde la venta al Albarań"
+msgid "Allows you to go from sales to stock picking and see the products stock quantity."
+msgstr "Permite navegar desde la venta al Albarań y ver la cantidad de stock de productos"
 
 #. module: so_group_stock_user_read
 #: model:res.groups,name:so_group_stock_user_read.group_stock_user_read
-msgid "Allows you to view the Delivery button from the sale."
-msgstr "Te permite ver el botón de Entregas desde la venta."
+msgid "Allows you to view the Delivery button from the sale and see the stock quantity"
+msgstr "Te permite ver el botón de Entregas desde la venta y la cantidad de stock de productos."

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2024 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="so_group_stock_user_read_view_stock_product_tree" model="ir.ui.view">
+        <field name="name">so.group.stock.user.read.view.stock.product.tree</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="stock.view_stock_product_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='qty_available']" position='attributes'>
+                <attribute name="groups">stock.group_stock_user,so_group_stock_user_read.group_stock_user_read</attribute>
+            </xpath>
+            <xpath expr="//field[@name='virtual_available']" position='attributes'>
+                <attribute name="groups">stock.group_stock_user,so_group_stock_user_read.group_stock_user_read</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
