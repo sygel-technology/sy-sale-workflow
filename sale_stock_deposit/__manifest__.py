@@ -4,7 +4,7 @@
 {
     "name": "Sale Stock Deposit",
     "summary": "Sale Stock deposit",
-    "version": "16.0.1.1.0",
+    "version": "16.0.1.1.1",
     "license": "AGPL-3",
     "author": "Sygel",
     "category": "Stock",
