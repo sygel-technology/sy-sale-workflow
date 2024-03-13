@@ -20,10 +20,9 @@ class StockLocation(models.Model):
 
     @api.constrains('location_id', 'partner_id')
     def _check_one_deposit_by_location_and_partner(self):
-        for sel in self:
+        for sel in self.filtered(lambda x: x.deposit_location):
             res = self.search_count([
                 ("id", "!=", sel.id),
-                ("deposit_location", "=", True),
                 ("location_id", "=", sel.location_id.id),
                 ("partner_id", "=", sel.partner_id.id),
             ])
