@@ -9,6 +9,7 @@ addon | version | summary
 --- | --- | ---
 [automatic_monthly_invoicing](automatic_monthly_invoicing/) | 15.0.1.0.0 | Group sales orders on the same invoice for the partners you set up automatically at the beginning of each month.
 [crm_claim_sale](crm_claim_sale/) | 15.0.1.0.0 | Create Sales from a Claim.
+[delivery_package_number_sale_autoworkflow](delivery_package_number_sale_autoworkflow/) | 15.0.1.0.0 | Make modules delivery_package_number and sale_automatic_workflow compatible.
 [free_delivery_untaxed](free_delivery_untaxed/) | 15.0.1.0.0 | Decide if delivery is free based on untaxed price
 [sale_automatic_workflow_force_invoice](sale_automatic_workflow_force_invoice/) | 15.0.1.0.0 | Force Invoice as an automatic workflow option
 [sale_order_high_priority](sale_order_high_priority/) | 15.0.1.0.0 | Three levels of priority in sale orders
