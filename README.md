@@ -13,6 +13,7 @@ addon | version | summary
 [free_delivery_untaxed](free_delivery_untaxed/) | 15.0.1.0.0 | Decide if delivery is free based on untaxed price
 [sale_automatic_workflow_force_invoice](sale_automatic_workflow_force_invoice/) | 15.0.1.0.0 | Force Invoice as an automatic workflow option
 [sale_order_high_priority](sale_order_high_priority/) | 15.0.1.0.0 | Three levels of priority in sale orders
+[sale_order_line_display_number](sale_order_line_display_number/) | 15.0.1.0.0 | Configure the number of sale order lines to be shown
 [sale_order_line_min_margin](sale_order_line_min_margin/) | 15.0.1.0.0 | Set minimum margin in sale order lines
 [sale_type_confirmation_requirement_rules](sale_type_confirmation_requirement_rules/) | 15.0.1.0.0 | Required domain conditions when validating a Sale Order
 [sale_type_required_rules](sale_type_required_rules/) | 15.0.1.0.0 | Required domain conditions when validating a Sale Order
