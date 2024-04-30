@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2024 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template
+        id="sale_report_hide_null_discount_sale_discount_display_amount_document"
+        name="sale.report.hide.null_discount.sale.discount.display.amount.document"
+        inherit_id="sale_discount_display_amount.sale_discount_display_amount_document"
+    >
+        <xpath expr="//span[@t-field='doc.discount_total']/../.." position="attributes">
+            <attribute name="t-if">doc.discount_total != 0.00</attribute>
+        </xpath>
+    </template>
+</odoo>
