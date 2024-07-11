@@ -5,7 +5,9 @@ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
     <record id="automatic_workflow_force_invoice_filter" model="ir.filters">
         <field name="name">Automatic Workflow Force Invoice Filter</field>
         <field name="model_id">sale.order</field>
-        <field name="domain">[('state', 'in', ['sale', 'done']), ('force_invoiced', '=', False), ('invoice_ids', '=', False)]</field>
+        <field
+            name="domain"
+        >[('state', 'in', ['sale', 'done']), ('force_invoiced', '=', False), ('invoice_ids', '=', False)]</field>
         <field name="user_id" ref="base.user_root" />
     </record>
 </odoo>

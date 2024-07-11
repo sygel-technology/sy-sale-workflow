@@ -5,7 +5,7 @@
 import logging
 from contextlib import contextmanager
 
-from odoo import models, api
+from odoo import api, models
 from odoo.tools.safe_eval import safe_eval
 
 _logger = logging.getLogger(__name__)
@@ -25,21 +25,15 @@ def savepoint(cr):
 
 
 class AutomaticWorkflowJob(models.Model):
-
     _inherit = "automatic.workflow.job"
 
     def _do_force_invoice_orders(self, sale, domain_filter):
-
         if not self.env["sale.order"].search_count(
             [("id", "=", sale.id)] + domain_filter
         ):
-            return "{} {} job bypassed".format(sale.display_name, sale)
-        sale.write({
-            "force_invoiced": True
-        })
-        return "{} {} set to force invoice successfully".format(
-            sale.display_name, sale
-        )
+            return f"{sale.display_name} {sale} job bypassed"
+        sale.write({"force_invoiced": True})
+        return f"{sale.display_name} {sale} set to force invoice successfully"
 
     @api.model
     def _force_invoice_orders(self, order_filter):
@@ -57,8 +51,7 @@ class AutomaticWorkflowJob(models.Model):
         workflow_domain = [("workflow_process_id", "=", sale_workflow.id)]
         if sale_workflow.force_invoice:
             self._force_invoice_orders(
-                safe_eval(
-                    sale_workflow.force_invoice_order_filter_id.domain
-                ) + workflow_domain
+                safe_eval(sale_workflow.force_invoice_order_filter_id.domain)
+                + workflow_domain
             )
         return super().run_with_workflow(sale_workflow)
