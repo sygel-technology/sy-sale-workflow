@@ -6,20 +6,18 @@
     "summary": "Configure the number of sale order lines to be shown",
     "version": "15.0.1.0.0",
     "category": "Sale",
-    "website": "https://www.sygel.es",
+    "website": "https://github.com/sygel-technology/sy-sale-workflow",
     "author": "Sygel, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
     "depends": [
-        'sale',
+        "sale",
     ],
-    "data": [
-        "data/sale_order_line_display_number_data.xml"
-    ],
+    "data": ["data/sale_order_line_display_number_data.xml"],
     "assets": {
-        'web.assets_backend': [
-            'sale_order_line_display_number/static/src/js/form_view.js',
+        "web.assets_backend": [
+            "sale_order_line_display_number/static/src/js/form_view.js",
         ]
-    }
+    },
 }
