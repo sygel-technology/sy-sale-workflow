@@ -9,6 +9,7 @@ class SaleOrderLine(models.Model):
 
     def get_sale_order_line_multiline_description_sale(self, product):
         ctx = dict(self._context, no_internal_ref=True)
-        return product.with_context(ctx).\
-            get_product_multiline_description_sale() + self.\
-            _get_sale_order_line_multiline_description_variants()
+        return (
+            product.with_context(ctx).get_product_multiline_description_sale()
+            + self._get_sale_order_line_multiline_description_variants()
+        )
