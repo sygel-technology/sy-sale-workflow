@@ -6,18 +6,15 @@
     "summary": "SO Sequence Duplicate Confirmed Order Type",
     "version": "15.0.1.0.0",
     "category": "Sale",
-    "website": "https://www.sygel.es",
+    "website": "https://github.com/sygel-technology/sy-sale-workflow",
     "author": "Sygel, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    'conflicts': [
-        'sale_quotation_number',
-        'sale_order_type_quotation_number'
-    ],
+    "conflicts": ["sale_quotation_number", "sale_order_type_quotation_number"],
     "depends": [
-        'sale',
-        'so_sequence_duplicate_order',
-        'so_sequence_confirmed_order_type',  
+        "sale",
+        "so_sequence_duplicate_order",
+        "so_sequence_confirmed_order_type",
     ],
 }

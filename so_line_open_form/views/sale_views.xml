@@ -1,17 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!-- Copyright 2022 Manuel Regidor <manuel.regidor@sygel.es>
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
     <record id="so_line_open_form_view_order_form" model="ir.ui.view">
         <field name="name">so.line.open.form.view.order.form</field>
         <field name="model">sale.order</field>
-        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="inherit_id" ref="sale.view_order_form" />
         <field name="arch" type="xml">
             <xpath expr="//field[@name='order_line']/tree" position="attributes">
-                <attribute name="editable"></attribute>
+                <attribute name="editable" />
             </xpath>
-            <xpath expr="//field[@name='order_line']//form//field[@name='product_id']" position="attributes">
-                <attribute name="widget"></attribute>
+            <xpath
+                expr="//field[@name='order_line']//form//field[@name='product_id']"
+                position="attributes"
+            >
+                <attribute name="widget" />
             </xpath>
         </field>
     </record>

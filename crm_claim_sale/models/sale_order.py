@@ -5,9 +5,6 @@ from odoo import fields, models
 
 
 class SaleOrder(models.Model):
-    _inherit = 'sale.order'
+    _inherit = "sale.order"
 
-    claim_id = fields.Many2one(
-        comodel_name="crm.claim",
-        string='Claim'
-    )
+    claim_id = fields.Many2one(comodel_name="crm.claim", string="Claim")

@@ -9,5 +9,7 @@ class SaleOrder(models.Model):
 
     def _compute_amount_untaxed_without_delivery(self):
         self.ensure_one()
-        delivery_cost_untaxed = sum([l.price_subtotal for l in self.order_line if l.is_delivery])
+        delivery_cost_untaxed = sum(
+            [l.price_subtotal for l in self.order_line if l.is_delivery]
+        )
         return float(self.amount_untaxed) - delivery_cost_untaxed
