@@ -20,7 +20,7 @@
         "views/stock_location.xml",
         "views/res_partner_views.xml",
         "views/stock_quant_views.xml",
-        "wizards/res_partner_stock_deposit_creation_wizard_views.xml"
+        "wizards/res_partner_stock_deposit_creation_wizard_views.xml",
     ],
     "installable": True,
     "post_init_hook": "_post_init_sale_stock_deposit",

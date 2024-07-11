@@ -1,17 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!-- Copyright 2023 Valentin Vinagre <valentin.vinagre@sygel.es>
  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
     <record id="stock_location_route_form_view_deposit" model="ir.ui.view">
         <field name="name">stock.location.route.form.deposit</field>
         <field name="model">stock.route</field>
-        <field name="inherit_id" ref="stock.stock_location_route_form_view"/>
+        <field name="inherit_id" ref="stock.stock_location_route_form_view" />
         <field name="arch" type="xml">
             <xpath expr="//group[@name='route_selector']" position="before">
                 <group string="Deposit">
                     <field name="deposit_operation" />
-                    <field name="deposit_operation_type" attrs="{'invisible':[('deposit_operation','=',False)], 'required': [('deposit_operation', '=', True)]}"/>
-                    <field name="warehouse_id" attrs="{'invisible':[('deposit_operation','=',False)], 'required': [('deposit_operation', '=', True)]}"/>
+                    <field
+                        name="deposit_operation_type"
+                        attrs="{'invisible':[('deposit_operation','=',False)], 'required': [('deposit_operation', '=', True)]}"
+                    />
+                    <field
+                        name="warehouse_id"
+                        attrs="{'invisible':[('deposit_operation','=',False)], 'required': [('deposit_operation', '=', True)]}"
+                    />
                 </group>
             </xpath>
         </field>
