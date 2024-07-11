@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!-- Copyright 2023 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
@@ -9,9 +9,9 @@
             <form>
                 <sheet>
                     <group>
-                        <field name="partner_id" invisible="1"/>
-                        <field name="deposit_name" readonly="1"/>
-                        <field name="stock_deposit_id"/>
+                        <field name="partner_id" invisible="1" />
+                        <field name="deposit_name" readonly="1" />
+                        <field name="stock_deposit_id" />
                     </group>
                 </sheet>
                 <footer>
@@ -27,7 +27,10 @@
         </field>
     </record>
 
-    <record id="res_partner_stock_deposit_creation_wizard_action" model="ir.actions.act_window">
+    <record
+        id="res_partner_stock_deposit_creation_wizard_action"
+        model="ir.actions.act_window"
+    >
         <field name="name">Create Stock Deposit</field>
         <field name="res_model">res.partner.stock.deposit.creation.wizard</field>
         <field name="view_mode">form</field>
