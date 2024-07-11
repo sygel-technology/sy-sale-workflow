@@ -1,21 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!-- Copyright 2024 Manuel Regidor <manuel.regidor@sygel.es>
 License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
-    <record id="sale_type_requirement_rules_sot_sale_order_type_form_view" model="ir.ui.view">
-        <field name="name">sale.type.requirement.rules.sot.sale.order.type.form.view</field>
+    <record
+        id="sale_type_requirement_rules_sot_sale_order_type_form_view"
+        model="ir.ui.view"
+    >
+        <field
+            name="name"
+        >sale.type.requirement.rules.sot.sale.order.type.form.view</field>
         <field name="model">sale.order.type</field>
         <field name="inherit_id" ref="sale_order_type.sot_sale_order_type_form_view" />
         <field name="arch" type="xml">
             <sheet position="inside">
                 <group>
                     <group>
-                        <field name="use_requirement_rules" groups="base.group_no_one" />
+                        <field
+                            name="use_requirement_rules"
+                            groups="base.group_no_one"
+                        />
                     </group>
                 </group>
                 <notebook>
-                    <page string="Requirement Rules" attrs="{'invisible': [('use_requirement_rules', '=', False)]}">
-                        <field name="requirement_rule_ids" groups="base.group_no_one" options="{'no_create_edit': True, 'no_create': True}" nolabel="1" />
+                    <page
+                        string="Requirement Rules"
+                        attrs="{'invisible': [('use_requirement_rules', '=', False)]}"
+                    >
+                        <field
+                            name="requirement_rule_ids"
+                            groups="base.group_no_one"
+                            options="{'no_create_edit': True, 'no_create': True}"
+                            nolabel="1"
+                        />
                     </page>
                 </notebook>
             </sheet>

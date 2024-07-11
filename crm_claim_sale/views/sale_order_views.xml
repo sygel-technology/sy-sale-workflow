@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!-- Copyright 2022 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
@@ -8,16 +8,18 @@
         <field name="inherit_id" ref="sale_crm.sale_view_inherit123" />
         <field name="arch" type="xml">
             <xpath expr="//field[@name='opportunity_id']" position='after'>
-                <field name="claim_id"/>         
+                <field name="claim_id" />
             </xpath>
         </field>
     </record>
-    
+
     <record id="crm_claim_sale_action_quotations_new" model="ir.actions.act_window">
         <field name="name">Quotation</field>
         <field name="res_model">sale.order</field>
         <field name="view_mode">form,tree,graph</field>
         <field name="domain">[('claim_id', '=', active_id)]</field>
-        <field name="context">{'search_default_claim_id': active_id, 'default_claim_id': active_id}</field>
+        <field
+            name="context"
+        >{'search_default_claim_id': active_id, 'default_claim_id': active_id}</field>
     </record>
 </odoo>

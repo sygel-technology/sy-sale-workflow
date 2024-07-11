@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!-- Copyright 2022 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
@@ -8,12 +8,29 @@
         <field name="inherit_id" ref="crm_claim.crm_case_claims_form_view" />
         <field name="arch" type="xml">
             <xpath expr="//header" position='inside'>
-                <button string="New Quotation" class="oe_highlight" name="action_new_quotation" type="object" data-hotkey="q" title="Create new quotation"/>
+                <button
+                    string="New Quotation"
+                    class="oe_highlight"
+                    name="action_new_quotation"
+                    type="object"
+                    data-hotkey="q"
+                    title="Create new quotation"
+                />
             </xpath>
             <xpath expr="//field[@name='name']/.." position='before'>
                 <div class="oe_button_box" name="button_box">
-                    <button class="oe_stat_button" style="width:18%;" type="object" name="action_view_sales" icon="fa-pencil-square-o">
-                        <field name="quotation_and_order_count" widget="statinfo" nolabel="1"/>
+                    <button
+                        class="oe_stat_button"
+                        style="width:18%;"
+                        type="object"
+                        name="action_view_sales"
+                        icon="fa-pencil-square-o"
+                    >
+                        <field
+                            name="quotation_and_order_count"
+                            widget="statinfo"
+                            nolabel="1"
+                        />
                         <div class="o_field_widget o_stat_info">
                             <span class="o_stat_text">Quotations /</span>
                             <span class="o_stat_text">Orders</span>

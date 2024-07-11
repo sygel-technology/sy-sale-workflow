@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!-- Copyright 2023 Angel Garcia de la Chica Herrera <angel.garcia@sygel.es>
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
     <record id="sale_order_sequence_res_config_settings_view_form" model="ir.ui.view">
         <field name="name">sale.order.sequence.res.config.settings.view.form</field>
         <field name="model">res.config.settings</field>
-        <field name="inherit_id" ref="sale.res_config_settings_view_form"/>
+        <field name="inherit_id" ref="sale.res_config_settings_view_form" />
         <field name="arch" type="xml">
             <xpath expr="//field[@name='group_proforma_sales']/../.." position="after">
                 <div class="col-12 col-lg-6 o_setting_box">
@@ -15,7 +15,8 @@
                     <div class="o_setting_right_pane">
                         <label for="use_number_suffix_duplicate_so" />
                         <div class="text-muted">
-                           If checked, duplicate sales orders will be named the same as the original + the number of the copy.<br/>
+                           If checked, duplicate sales orders will be named the same as the original + the number of the copy.<br
+                            />
                            Example: S0001 -> S0001/2, S0001/3 ...
                         </div>
                     </div>

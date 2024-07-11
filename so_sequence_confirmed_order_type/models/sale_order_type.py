@@ -11,5 +11,5 @@ class SaleOrderTypology(models.Model):
         string="Different Prefix for Confirmed Sale Orders",
     )
     confirmed_so_prefix_by_type = fields.Char(
-        string='Confirmed Sale Order Prefix',
+        string="Confirmed Sale Order Prefix",
     )

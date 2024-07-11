@@ -6,7 +6,7 @@
     "summary": "Decide if delivery is free based on untaxed price",
     "version": "15.0.1.0.0",
     "category": "Sales",
-    "website": "https://www.sygel.es",
+    "website": "https://github.com/sygel-technology/sy-sale-workflow",
     "author": "Sygel",
     "license": "AGPL-3",
     "application": False,
@@ -15,6 +15,6 @@
         "delivery",
     ],
     "data": [
-        'views/delivery_view.xml',
+        "views/delivery_view.xml",
     ],
 }

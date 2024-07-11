@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!-- Copyright 2023 Manuel Regidor <manuel.regidor@sygel.es>
  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
@@ -10,8 +10,8 @@
             <page name="pricelist_config" position="inside">
                 <group string="Filter">
                     <group>
-                        <field name="state_ids" widget="many2many_tags"/>
-                        <field name="team_ids" widget="many2many_tags"/>
+                        <field name="state_ids" widget="many2many_tags" />
+                        <field name="team_ids" widget="many2many_tags" />
                     </group>
                 </group>
             </page>

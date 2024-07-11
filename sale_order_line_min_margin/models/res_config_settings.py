@@ -5,16 +5,16 @@ from odoo import fields, models
 
 
 class ResConfigSettings(models.TransientModel):
-    _inherit = 'res.config.settings'
+    _inherit = "res.config.settings"
 
     apply_so_line_min_margin = fields.Boolean(
         string="Apply Sale Order Line Min. Margin",
         related="company_id.apply_so_line_min_margin",
-        readonly=False
+        readonly=False,
     )
     so_line_min_margin = fields.Float(
         string="Sale Order Line Min. Margin (%)",
         related="company_id.so_line_min_margin",
         digits="Product Price",
-        readonly=False
+        readonly=False,
     )
