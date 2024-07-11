@@ -39,17 +39,22 @@ class StockRule(models.Model):
             WH/Stock                WH/deposit(dinamic)
 
         """
-        if self.route_id.deposit_operation and self.route_id.deposit_operation_type in ('deposit', 'delivery_deposit'):
-            partner_id = self.env['res.partner'].browse(values.get('partner_id', False))
+        if self.route_id.deposit_operation and self.route_id.deposit_operation_type in (
+            "deposit",
+            "delivery_deposit",
+        ):
+            partner_id = self.env["res.partner"].browse(values.get("partner_id", False))
             domain = [
-                ('partner_id', '=', partner_id.commercial_partner_id.id),
-                ('deposit_location', '=', True)
+                ("partner_id", "=", partner_id.commercial_partner_id.id),
+                ("deposit_location", "=", True),
             ]
-            if values.get('warehouse_id', False):
-                domain.append((
-                    'warehouse_id', '=', values.get('warehouse_id').id
-                ))
-            location_id = self.env['stock.location'].search(domain, limit=1)
+            if values.get("warehouse_id", False):
+                domain.append(("warehouse_id", "=", values.get("warehouse_id").id))
+            location_id = self.env["stock.location"].search(domain, limit=1)
             if location_id:
-                res['location_id' if self.route_id.deposit_operation_type == 'deposit' else 'location_dest_id'] = location_id.id
+                res[
+                    "location_id"
+                    if self.route_id.deposit_operation_type == "deposit"
+                    else "location_dest_id"
+                ] = location_id.id
         return res
