@@ -28,17 +28,15 @@ class StockRule(models.Model):
             company_id,
             values,
         )
-        """
-        This only works for the PULL rule, for the rest it would have to be modified.
-        venta deposito -> deposit
-            origin(location_id)     dest
-            WH/deposit(dinamic)     partners/customers
+        # This only works for the PULL rule, for the rest it would have to be modified.
+        # venta deposito -> deposit
+        #     origin(location_id)     dest
+        #     WH/deposit(dinamic)     partners/customers
 
-        Delivery Deposit -> delivery_deposit
-            origin                  dest(location_dest_id)
-            WH/Stock                WH/deposit(dinamic)
+        # Delivery Deposit -> delivery_deposit
+        #     origin                  dest(location_dest_id)
+        #     WH/Stock                WH/deposit(dinamic)
 
-        """
         if self.route_id.deposit_operation and self.route_id.deposit_operation_type in (
             "deposit",
             "delivery_deposit",

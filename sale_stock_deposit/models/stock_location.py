@@ -15,20 +15,23 @@ class StockLocation(models.Model):
     )
     partner_id = fields.Many2one(comodel_name="res.partner", string="Owner")
 
-    @api.constrains("location_id", "partner_id")
+    @api.constrains("location_id", "partner_id", "deposit_location", "company_id")
     def _check_one_deposit_by_location_and_partner(self):
-        for sel in self.filtered(lambda x: x.deposit_location):
+        for sel in self:
+            warehouse_id = sel.warehouse_id.view_location_id
             res = self.search_count(
                 [
-                    ("id", "!=", sel.id),
-                    ("location_id", "=", sel.location_id.id),
+                    ("id", "child_of", warehouse_id.id),
+                    ("company_id", "=", sel.company_id.id),
                     ("partner_id", "=", sel.partner_id.id),
+                    ("deposit_location", "=", True),
                 ]
             )
-            if res:
+            if res > 1:
                 raise ValidationError(
                     _(
-                        "There cannot be two Deposits with the same Partner and Warehouse."
+                        "There cannot be two Deposits with the same "
+                        "Partner and Warehouse."
                     )
                 )
 

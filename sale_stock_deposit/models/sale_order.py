@@ -38,10 +38,9 @@ class SaleOrder(models.Model):
                         )
                     )
                 if line.route_id.deposit_operation_type == "delivery_deposit":
-                    """ --->> A field can be created in the company to indicate
-                            whether to block or not, so that replenishments
-                            can be executed if necessary.
-                    """
+                    #  --->> A field can be created in the company to indicate
+                    #         whether to block or not, so that replenishments
+                    #         can be executed if necessary.
                     qty_virtual = line.product_id.with_context(
                         location=locations.id
                     ).virtual_available
@@ -49,13 +48,10 @@ class SaleOrder(models.Model):
                     if total > 0:
                         raise UserError(
                             _(
-                                "The client '{}' in your location does not have "
-                                "enough stock. The stock virtual in the location"
-                                " is '{}' for the product '{}'".format(
-                                    line.order_partner_id.display_name,
-                                    abs(qty_virtual),
-                                    line.product_id.name,
-                                )
+                                f"The client '{line.order_partner_id.display_name}' "
+                                "in your location does not have enough stock. The "
+                                f"stock virtual in the location is '{abs(qty_virtual)}'"
+                                f" for the product '{line.product_id.name}'"
                             )
                         )
             if (
@@ -64,12 +60,13 @@ class SaleOrder(models.Model):
             ):
                 raise UserError(
                     _(
-                        "Route's warehouse '{}' for product '{}' is not the same"
-                        " as warehouse '{}' selected for the sale order."
-                    ).format(
-                        line.route_id.warehouse_id.display_name,
-                        line.product_id.display_name,
-                        line.warehouse_id.display_name,
+                        "Route's warehouse "
+                        f"'{line.route_id.warehouse_id.display_name}' "
+                        "for product "
+                        f"'{line.product_id.display_name}' "
+                        "is not the same as warehouse "
+                        f"'{line.warehouse_id.display_name}' "
+                        "selected for the sale order."
                     )
                 )
-        return super(SaleOrder, self).action_confirm()
+        return super().action_confirm()
