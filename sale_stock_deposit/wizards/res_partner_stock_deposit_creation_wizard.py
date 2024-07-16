@@ -13,7 +13,6 @@ class ResPartnerStockDepositCreationWizard(models.TransientModel):
         string="Partner",
     )
     deposit_name = fields.Char(
-        string="Deposit Name",
         compute="_compute_deposit_name",
         readonly=False,
         required=True,
@@ -32,8 +31,8 @@ class ResPartnerStockDepositCreationWizard(models.TransientModel):
             if sel.partner_id:
                 res = _("Deposit {}").format(sel.partner_id.display_name)
                 if sel.partner_id.ref:
-                    res = _("Deposit [{}] {}").format(
-                        sel.partner_id.ref, sel.partner_id.display_name
+                    res = _(
+                        f"Deposit [{sel.partner_id.ref}] {sel.partner_id.display_name}"
                     )
             sel.deposit_name = res
 

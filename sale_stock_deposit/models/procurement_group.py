@@ -75,6 +75,6 @@ class ProcurementGroup(models.Model):
             self.env.context,
             partner_id=self.env["res.partner"].browse(values.get("partner_id", False)),
         )
-        return super(ProcurementGroup, self.with_context(context))._get_rule(
+        return super(ProcurementGroup, self.with_context(**context))._get_rule(
             product_id, location_id, values
         )

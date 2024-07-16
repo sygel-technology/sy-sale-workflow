@@ -17,7 +17,6 @@ class StockRoute(models.Model):
             ("deposit", "Deposit Sell"),
             ("delivery_deposit", "Delivery Stock Deposit"),
         ],
-        string="Deposit Operation Type",
         default="deposit",
     )
     warehouse_id = fields.Many2one("stock.warehouse", "Warehouse")
