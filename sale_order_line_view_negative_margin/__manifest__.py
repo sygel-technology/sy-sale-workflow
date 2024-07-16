@@ -7,6 +7,7 @@
     "version": "16.0.1.0.0",
     "license": "AGPL-3",
     "author": "Sygel",
+    "website": "https://github.com/sygel-technology/sy-sale-workflow",
     "category": "Sales",
     "depends": [
         "sale_margin",

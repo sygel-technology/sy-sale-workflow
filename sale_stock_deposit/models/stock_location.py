@@ -28,7 +28,8 @@ class StockLocation(models.Model):
             if res:
                 raise ValidationError(
                     _(
-                        "There cannot be two Deposits with the same Partner and Warehouse."
+                        "There cannot be two Deposits with the same "
+                        "Partner and Warehouse."
                     )
                 )
 

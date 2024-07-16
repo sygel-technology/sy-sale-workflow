@@ -8,7 +8,8 @@ class SaleOrderLine(models.Model):
     _inherit = "sale.order.line"
 
     route_id = fields.Many2one(
-        domain="[('sale_selectable', '=', True), ('warehouse_id', 'in', (False, warehouse_id))]"
+        domain="[('sale_selectable', '=', True), "
+        "('warehouse_id', 'in', (False, warehouse_id))]"
     )
 
     def _prepare_invoice_line(self, **optional_values):
@@ -65,7 +66,7 @@ class SaleOrderLine(models.Model):
 
     @api.depends("route_id")
     def _compute_invoice_status(self):
-        super(SaleOrderLine, self)._compute_invoice_status()
+        super()._compute_invoice_status()
         for line in self.filtered(
             lambda x: x.route_id
             and x.route_id.deposit_operation

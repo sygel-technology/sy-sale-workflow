@@ -72,4 +72,4 @@ class SaleOrder(models.Model):
                         line.warehouse_id.display_name,
                     )
                 )
-        return super(SaleOrder, self).action_confirm()
+        return super().action_confirm()
