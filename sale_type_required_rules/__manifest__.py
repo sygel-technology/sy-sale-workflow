@@ -9,7 +9,6 @@
     "author": "Sygel, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "category": "Delivery",
-    "license": "AGPL-3",
     "depends": ["base", "sale", "sale_order_type"],
     "data": [
         "views/sale_order_type_view.xml",

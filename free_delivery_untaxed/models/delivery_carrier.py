@@ -10,7 +10,7 @@ class DeliveryCarrier(models.Model):
     use_amount_untaxed = fields.Boolean(string="Use amount untaxed")
 
     def rate_shipment(self, order):
-        res = super(DeliveryCarrier, self).rate_shipment(order)
+        res = super().rate_shipment(order)
         if (
             self.free_over
             and self.use_amount_untaxed

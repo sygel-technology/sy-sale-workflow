@@ -1,6 +1,6 @@
 .. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
-  :target: http://www.gnu.org/licenses/agpl
-  :alt: License: AGPL-3
+    :target: http://www.gnu.org/licenses/agpl
+    :alt: License: AGPL-3
 
 ========================================
 Sale Type Confirmation Requirement Rules
@@ -65,8 +65,8 @@ Maintainer
 This module is maintained by Sygel.
 
 .. image:: https://www.sygel.es/logo.png
-   :alt: Sygel
-   :target: https://www.sygel.es
+    :alt: Sygel
+    :target: https://www.sygel.es
 
 This module is part of the `Sygel/sy-sale-workflow <https://github.com/sygel-technology/sy-sale-workflow/>`_.
 

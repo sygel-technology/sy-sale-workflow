@@ -1,6 +1,6 @@
 .. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
-	:target: http://www.gnu.org/licenses/agpl
-	:alt: License: AGPL-3
+    :target: http://www.gnu.org/licenses/agpl
+    :alt: License: AGPL-3
 
 ===========================
 Automatic Monthly Invoicing
@@ -44,9 +44,9 @@ Usage
 To use this module you need to:
 
 #. Create a new sales order, select a 'Invoice Address' that has the option 
-	'Automatic Monthly Invoicing' checked.
+    'Automatic Monthly Invoicing' checked.
 #. All sales orders from that selected 'Invoice Address' will be automatically grouped into one 
-	invoice on the first day of the following month.
+    invoice on the first day of the following month.
 
 
 
@@ -81,10 +81,10 @@ Maintainer
 ~~~~~~~~~~
 
 This module is maintained by Sygel.
+
 .. image:: https://www.sygel.es/logo.png
    :alt: Sygel
    :target: https://www.sygel.es
-
 
 This module is part of the `Sygel/sy-account-invoice-reporting <https://github.com/sygel-technology/sy-account-invoice-reporting>`_.
 
