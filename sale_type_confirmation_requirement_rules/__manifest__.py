@@ -9,7 +9,6 @@
     "author": "Sygel, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "category": "Sales",
-    "license": "AGPL-3",
     "depends": [
         "sale_order_type",
         "base_confirmation_requirement_rules",
