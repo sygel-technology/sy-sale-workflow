@@ -1,0 +1,71 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_order_line_clone
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 14:31+0000\n"
+"PO-Revision-Date: 2024-07-17 16:31+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.3\n"
+
+#. module: sale_order_line_clone
+#: model:ir.model.fields,field_description:sale_order_line_clone.field_product_product__can_clone_sale_line
+#: model:ir.model.fields,field_description:sale_order_line_clone.field_product_template__can_clone_sale_line
+#: model:ir.model.fields,field_description:sale_order_line_clone.field_sale_order_line__can_clone_sale_line
+#: model:res.groups,name:sale_order_line_clone.group_can_clone_sale_line
+msgid "Can Clone Sale Order Line"
+msgstr "Puede duplicar la línea de pedidos de venta"
+
+#. module: sale_order_line_clone
+#: model:ir.model.fields,field_description:sale_order_line_clone.field_product_template__changeset_change_ids
+#: model:ir.model.fields,field_description:sale_order_line_clone.field_sale_order_line__changeset_change_ids
+msgid "Changeset Changes"
+msgstr "Cambios en el conjunto de modificaciones"
+
+#. module: sale_order_line_clone
+#: model:ir.model.fields,field_description:sale_order_line_clone.field_product_template__changeset_ids
+#: model:ir.model.fields,field_description:sale_order_line_clone.field_sale_order_line__changeset_ids
+msgid "Changesets"
+msgstr "Conjuntos de cambios"
+
+#. module: sale_order_line_clone
+#: model_terms:ir.ui.view,arch_db:sale_order_line_clone.sale_order_form_inherit_clone_line
+msgid "Clone line"
+msgstr "Duplicar linea"
+
+#. module: sale_order_line_clone
+#: model:ir.model.fields,field_description:sale_order_line_clone.field_product_template__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:sale_order_line_clone.field_sale_order_line__count_pending_changeset_changes
+msgid "Count Pending Changeset Changes"
+msgstr "Contar los cambios del conjunto de cambios pendientes"
+
+#. module: sale_order_line_clone
+#: model:ir.model.fields,field_description:sale_order_line_clone.field_product_template__count_pending_changesets
+#: model:ir.model.fields,field_description:sale_order_line_clone.field_sale_order_line__count_pending_changesets
+msgid "Count Pending Changesets"
+msgstr "Contar conjuntos de cambios pendientes"
+
+#. module: sale_order_line_clone
+#: model:ir.model,name:sale_order_line_clone.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: sale_order_line_clone
+#: model:ir.model,name:sale_order_line_clone.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de pedido de venta"
+
+#. module: sale_order_line_clone
+#: model:ir.model.fields,field_description:sale_order_line_clone.field_product_template__user_can_see_changeset
+#: model:ir.model.fields,field_description:sale_order_line_clone.field_sale_order_line__user_can_see_changeset
+msgid "User Can See Changeset"
+msgstr "Usuario puede ver conjunto de cambios"
