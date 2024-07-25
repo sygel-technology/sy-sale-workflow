@@ -1,6 +1,6 @@
 .. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
-	:target: http://www.gnu.org/licenses/agpl
-	:alt: License: AGPL-3
+    :target: http://www.gnu.org/licenses/agpl
+    :alt: License: AGPL-3
 
 ========================
 Sale Order High Priority
@@ -31,18 +31,6 @@ Usage
 To use this module, you need to:
 
 #. No usage instructions needed
-
-
-ROADMAP
-=======
-
-It only works with serial numbers, not lots.
-
-[ Enumerate known caveats and future potential improvements.
-  It is mostly intended for end-users, and can also help
-  potential new contributors discovering new features to implement. ]
-
-* ...
 
 
 Bug Tracker

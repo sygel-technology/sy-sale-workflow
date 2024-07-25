@@ -43,9 +43,7 @@ class SaleOrder(models.Model):
                     grouped=grouped, final=final, date=date
                 )
         else:
-            moves = super(SaleOrder, self)._create_invoices(
-                grouped=grouped, final=final, date=date
-            )
+            moves = super()._create_invoices(grouped=grouped, final=final, date=date)
         return moves
 
     def create_monthly_invoices(self, validate=False):

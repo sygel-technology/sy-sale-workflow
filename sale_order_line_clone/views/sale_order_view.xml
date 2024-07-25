@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="sale_order_form_inherit_clone_line">
+        <field name="name">sale.order.form.inherit.clone.line</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']/tree" position="inside">
+                <button
+                    name="copy"
+                    type="object"
+                    class="oe_inline fa fa-clone oe_link"
+                    groups="sale_order_line_clone.group_can_clone_sale_line"
+                    attrs="{'invisible':[('can_clone_sale_line', '=', False)]}"
+                    help="Clone line"
+                />
+                <field name="can_clone_sale_line" optional="hide" />
+            </xpath>
+        </field>
+    </record>
+</odoo>
