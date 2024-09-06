@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+product_search_cat_attr_sale_user,product.search.cat.attr.sale.user,model_product_search_cat_attr_sale,sales_team.group_sale_salesman,1,1,1,1
+product_search_cat_attr_line_sale_user,product.search.cat.attr.line.sale.user,model_product_search_cat_attr_line_sale,sales_team.group_sale_salesman,1,1,1,1
+product_search_category_sale_product_line_user,product.search.category.sale.product.line.user,model_product_search_cat_sale_product_line,sales_team.group_sale_salesman,1,1,1,1

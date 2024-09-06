@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Manuel Regidor <manuel.regidor@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="product_search_cat_attr_sale_form_view" model="ir.ui.view">
+        <field name="name">product.search.cat.attr.sale.form.view</field>
+        <field name="model">product.search.cat.attr.sale</field>
+        <field
+            name="inherit_id"
+            ref="product_search_category_attribute.product_search_cat_attr_form_view"
+        />
+        <field name="arch" type="xml">
+            <page name="attributes" position="before">
+                <page
+                    name="products_sale"
+                    string="Products"
+                    attrs="{'invisible': [('product_line_ids', '=', [])]}"
+                >
+                    <div>
+                        <p
+                        >To add products to the sale order, set the quantity for the products to be added and click on "Add Products to Order". Only products for which quantity is greater than 0 will be added.</p>
+                    </div>
+                    <field name="product_line_ids">
+                        <tree editable="bottom" create="false" delete="false">
+                            <field
+                                name="product_id"
+                                options="{'no_create_edit': True, 'no_create': True, 'no_open': True}"
+                            />
+                            <field
+                                name="attribute_value_ids"
+                                widget="many2many_tags"
+                                options="{'no_create_edit': True, 'no_create': True, 'no_open': True}"
+                            />
+                            <field name="quantity" />
+                        </tree>
+                    </field>
+                </page>
+            </page>
+            <button name="cancel" position="before">
+                <button
+                    name="create_order_lines"
+                    string="Add Products To Order"
+                    type="object"
+                    class="oe_highlight"
+                />
+            </button>
+        </field>
+    </record>
+</odoo>
