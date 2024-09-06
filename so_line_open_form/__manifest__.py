@@ -8,7 +8,7 @@
     "license": "AGPL-3",
     "category": "Sale",
     "summary": "Open form view when click on sale order line.",
-    "website": "https://www.sygel.es",
+    "website": "https://github.com/sygel-technology/sy-sale-workflow",
     "depends": [
         "sale",
     ],
