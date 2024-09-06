@@ -8,6 +8,5 @@ class ResCompany(models.Model):
     _inherit = "res.company"
 
     disable_cancel_warning = fields.Boolean(
-        string="Disable Cancel Warning",
         default=True,
     )
