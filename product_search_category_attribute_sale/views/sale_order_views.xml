@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 Manuel Regidor <manuel.regidor@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="product_search_cat_att_view_order_form" model="ir.ui.view">
+        <field name="name">product.search.cat.attr.view.order.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//page[@name='order_lines']//field[@name='order_line']"
+                position="before"
+            >
+                <button
+                    type="object"
+                    name="action_open_product_search_cat_attr_sale"
+                    string="Search Product"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>
