@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!-- Copyright 2020 Manuel Regidor <manuel.regidor@sygel.es>
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
     <record id="sot_sale_order_type_form_view" model="ir.ui.view">
         <field name="name">queued.so.mail.sot.sale.order.type.form.view</field>
         <field name="model">sale.order.type</field>
-        <field name="inherit_id" ref="sale_order_type.sot_sale_order_type_form_view"/>
+        <field name="inherit_id" ref="sale_order_type.sot_sale_order_type_form_view" />
         <field name="arch" type="xml">
             <xpath expr="/form/sheet" position="inside">
                 <group string="Email Options">
@@ -14,9 +14,18 @@
                         <field name="so_mail_delay" />
                     </group>
                     <group>
-                        <field name="so_mail_id" attrs="{'invisible': [('send_confirmation_mails', '=', False)]}"/>
-                        <field name="picking_complete_due_mail_id" attrs="{'invisible': [('send_confirmation_mails', '=', False)]}"/>
-                        <field name="picking_complete_paid_id" attrs="{'invisible': [('send_confirmation_mails', '=', False)]}"/>
+                        <field
+                            name="so_mail_id"
+                            attrs="{'invisible': [('send_confirmation_mails', '=', False)]}"
+                        />
+                        <field
+                            name="picking_complete_due_mail_id"
+                            attrs="{'invisible': [('send_confirmation_mails', '=', False)]}"
+                        />
+                        <field
+                            name="picking_complete_paid_id"
+                            attrs="{'invisible': [('send_confirmation_mails', '=', False)]}"
+                        />
 <!--                         De momento no tenemos en cuenta albaranes parciales
  --><!--                         <field name="picking_partial_due_id" attrs="{'invisible': [('send_confirmation_mails', '=', False)]}"/>
                         <field name="picking_partial_paid_id" attrs="{'invisible': [('send_confirmation_mails', '=', False)]}"/> -->
