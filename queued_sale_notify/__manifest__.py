@@ -2,20 +2,19 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 {
-    "name": "Queued SO Mail",
-    "summary": "Module summary",
-    "version": "12.0.1.0.0",
-    "category": "Uncategorized",
+    "name": "Queued Sale Notify",
+    "summary": "Schedule email/logs/activities notificacions on sales",
+    "version": "17.0.1.0.0",
+    "category": "Sales",
     "website": "https://github.com/sygel-technology/sy-sale-workflow",
     "author": "Sygel, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": ["base", "queue_job", "sale_order_type", "delivery"],
+    "depends": ["sale_order_type", "delivery", "base_queued_notify"],
     "data": [
-        "views/res_partner_view.xml",
+        "security/queued_sale_notify_security.xml",
+        "security/ir.model.access.csv",
         "views/sale_order_type_view.xml",
-        "views/delivery_view.xml",
-        "views/sale_views.xml",
     ],
 }

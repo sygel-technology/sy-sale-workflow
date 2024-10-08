@@ -1,0 +1,197 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* queued_sale_notify
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-09 16:38+0000\n"
+"PO-Revision-Date: 2024-10-09 18:51+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: queued_sale_notify
+#: model_terms:ir.ui.view,arch_db:queued_sale_notify.sot_sale_order_type_form_view_queued_sale_notify
+msgid "Activity Notifications"
+msgstr "Notificaciones de actividad"
+
+#. module: queued_sale_notify
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_mail_notify__avoid_internal_users
+msgid "Avoid Internal Users"
+msgstr "Evitar usuarios internos"
+
+#. module: queued_sale_notify
+#: model:ir.model.fields.selection,name:queued_sale_notify.selection__sale_activity_notify__trigger_state__sale
+#: model:ir.model.fields.selection,name:queued_sale_notify.selection__sale_log_note_notify__trigger_state__sale
+#: model:ir.model.fields.selection,name:queued_sale_notify.selection__sale_mail_notify__trigger_state__sale
+#: model:ir.model.fields.selection,name:queued_sale_notify.selection__sale_notify_mixin__trigger_state__sale
+msgid "Confirmed Sales"
+msgstr "Pedidos de venta confirmados"
+
+#. module: queued_sale_notify
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_activity_notify__create_uid
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_log_note_notify__create_uid
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_mail_notify__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: queued_sale_notify
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_activity_notify__create_date
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_log_note_notify__create_date
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_mail_notify__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: queued_sale_notify
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_activity_notify__display_name
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_log_note_notify__display_name
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_mail_notify__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: queued_sale_notify
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_activity_notify__id
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_log_note_notify__id
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_mail_notify__id
+msgid "ID"
+msgstr ""
+
+#. module: queued_sale_notify
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_activity_notify__write_uid
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_log_note_notify__write_uid
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_mail_notify__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: queued_sale_notify
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_activity_notify__write_date
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_log_note_notify__write_date
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_mail_notify__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: queued_sale_notify
+#: model_terms:ir.ui.view,arch_db:queued_sale_notify.sot_sale_order_type_form_view_queued_sale_notify
+msgid "Log Note Notifications"
+msgstr "Notificaciones de nota"
+
+#. module: queued_sale_notify
+#: model_terms:ir.ui.view,arch_db:queued_sale_notify.sot_sale_order_type_form_view_queued_sale_notify
+msgid "Mail Notifications"
+msgstr "Notificaciones de correo"
+
+#. module: queued_sale_notify
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_mail_notify__mail_template_id
+msgid "Mail Template"
+msgstr "Plantilla de correo"
+
+#. module: queued_sale_notify
+#: model:ir.model,name:queued_sale_notify.model_sale_notify_mixin
+msgid "Mixin for queued sale notification events"
+msgstr "Mixin para eventos de notificación encolados en ventas"
+
+#. module: queued_sale_notify
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_activity_notify__note
+msgid "Note"
+msgstr "Nota"
+
+#. module: queued_sale_notify
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_log_note_notify__note_text
+msgid "Note Text"
+msgstr "Texto de la nota"
+
+#. module: queued_sale_notify
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_activity_notify__notified_model_id
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_log_note_notify__notified_model_id
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_mail_notify__notified_model_id
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_notify_mixin__notified_model_id
+msgid "Notified Model"
+msgstr "Modelo notificado"
+
+#. module: queued_sale_notify
+#: model_terms:ir.ui.view,arch_db:queued_sale_notify.sot_sale_order_type_form_view_queued_sale_notify
+msgid "Sale"
+msgstr "Venta"
+
+#. module: queued_sale_notify
+#: model:ir.model,name:queued_sale_notify.model_sale_activity_notify
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_order_type__sale_activity_notify_ids
+msgid "Sale Activity Notify"
+msgstr "Notificación en actividad de venta"
+
+#. module: queued_sale_notify
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_order_type__sale_log_note_notify_ids
+msgid "Sale Log Note Notify"
+msgstr "Notificación en nota de venta"
+
+#. module: queued_sale_notify
+#: model:ir.model,name:queued_sale_notify.model_sale_mail_notify
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_order_type__sale_mail_notify_ids
+msgid "Sale Mail Notify"
+msgstr "Notificación en correo de venta"
+
+#. module: queued_sale_notify
+#: model:ir.model,name:queued_sale_notify.model_sale_log_note_notify
+msgid "Sale Note Notify"
+msgstr "Notificación en nota de venta"
+
+#. module: queued_sale_notify
+#: model:res.groups,name:queued_sale_notify.sale_notify_manager
+msgid "Sale Notify Manager"
+msgstr "Mánager de notificaciones en ventas"
+
+#. module: queued_sale_notify
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_activity_notify__sale_order_type_id
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_log_note_notify__sale_order_type_id
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_mail_notify__sale_order_type_id
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_notify_mixin__sale_order_type_id
+msgid "Sale Order Type"
+msgstr "Tipo de pedido de venta"
+
+#. module: queued_sale_notify
+#: model:ir.model,name:queued_sale_notify.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: queued_sale_notify
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_activity_notify__summary
+msgid "Summary"
+msgstr "Resumen"
+
+#. module: queued_sale_notify
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_activity_notify__time_after_confirmation
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_log_note_notify__time_after_confirmation
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_mail_notify__time_after_confirmation
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_notify_mixin__time_after_confirmation
+msgid "Time After Confirmation"
+msgstr "Tiempo después de la confirmación"
+
+#. module: queued_sale_notify
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_activity_notify__time_to_deadline
+msgid "Time To Deadline"
+msgstr "Tiempo para vencimiento"
+
+#. module: queued_sale_notify
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_activity_notify__trigger_state
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_log_note_notify__trigger_state
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_mail_notify__trigger_state
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_notify_mixin__trigger_state
+msgid "Trigger State"
+msgstr "Estado de activación"
+
+#. module: queued_sale_notify
+#: model:ir.model,name:queued_sale_notify.model_sale_order_type
+msgid "Type of sale order"
+msgstr "Tipo de pedido de venta"
+
+#. module: queued_sale_notify
+#: model:ir.model.fields,field_description:queued_sale_notify.field_sale_activity_notify__user_id
+msgid "User"
+msgstr "Usuario"

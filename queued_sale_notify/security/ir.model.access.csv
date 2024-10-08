@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+sale_activity_notify_manager,sale.activity.notify.manager,model_sale_activity_notify,sale_notify_manager,1,1,1,1
+sale_log_note_notify_manager,sale.log.note.notify.manager,model_sale_log_note_notify,sale_notify_manager,1,1,1,1
+sale_mail_notify_manager,sale.mail.notify.manager,model_sale_mail_notify,sale_notify_manager,1,1,1,1
+sale_activity_notify_user,sale.activity.notify.user,model_sale_activity_notify,base.group_user,1,0,0,0
+sale_log_note_notify_user,sale.log.note.notify.user,model_sale_log_note_notify,base.group_user,1,0,0,0
+sale_mail_notify_user,sale.mail.notify.user,model_sale_mail_notify,base.group_user,1,0,0,0
