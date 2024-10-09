@@ -1,0 +1,1 @@
+odoo-addon-base_queued_notify @ git+https://github.com/sygel-technology/sy-server-tools.git@refs/pull/7/head#subdirectory=base_queued_notify

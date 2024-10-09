@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2020 Manuel Regidor <manuel.regidor@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="sot_sale_order_type_form_view_queued_sale_notify" model="ir.ui.view">
+        <field name="name">view.sale.order.type.form.queued.sale.notify</field>
+        <field name="model">sale.order.type</field>
+        <field name="inherit_id" ref="sale_order_type.sot_sale_order_type_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="inside">
+                <notebook name="notifications">
+                    <page name="mail_notification" string="Mail Notifications">
+                        <group string="Sale">
+                            <field
+                                name="sale_mail_notify_ids"
+                                nolabel="1"
+                                colspan="2"
+                                context="{'tree_view_ref':'base_queued_notify.mail_notify_mixin_tree'}"
+                            />
+                        </group>
+                    </page>
+                    <page name="log_notification" string="Log Note Notifications">
+                        <group string="Sale">
+                            <field
+                                name="sale_log_note_notify_ids"
+                                nolabel="1"
+                                colspan="2"
+                                context="{'tree_view_ref':'base_queued_notify.note_notify_mixin_tree'}"
+                            />
+                        </group>
+                    </page>
+                    <page name="activity_notification" string="Activity Notifications">
+                        <group string="Sale">
+                            <field
+                                name="sale_activity_notify_ids"
+                                nolabel="1"
+                                colspan="2"
+                                context="{'tree_view_ref':'base_queued_notify.activity_notify_mixin_tree'}"
+                            />
+                        </group>
+                    </page>
+                </notebook>
+            </xpath>
+        </field>
+    </record>
+</odoo>
