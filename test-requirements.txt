@@ -1,1 +1,1 @@
-odoo-addon-product_search_category_attribute @ git+https://github.com/sygel-technology/sy-product-attribute.git@16.0-T-3055#subdirectory=setup/product_search_category_attribute
+odoo-addon-product_search_category_attribute @ git+https://github.com/sygel-technology/sy-product-attribute.git@16.0#subdirectory=setup/product_search_category_attribute
