@@ -5,8 +5,8 @@ Odoo Sales, Workflow and Organization
 
 Available addons
 ----------------
-addon | version | summary
---- | --- | ---
-[sale_product_name_description](sale_product_name_description/) | 12.0.1.0.0 | Only code, name and attributes in product description.
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[sale_product_name_description](sale_product_name_description/) | 12.0.1.0.0 |  | Only code, name and attributes in product description.
 
 [//]: # (end addons)
