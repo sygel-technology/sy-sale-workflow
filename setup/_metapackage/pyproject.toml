@@ -1,5 +1,5 @@
 [project]
-name = "queued_sale_notify"
+name = "odoo-addons-sygel-technology-sy-sale-workflow"
 version = "17.0.20241030.0"
 dependencies = [
     "odoo-addon-queued_sale_notify>=17.0dev,<17.1dev",
