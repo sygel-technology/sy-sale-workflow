@@ -1,0 +1,176 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_category_pricelist
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-18 18:15+0000\n"
+"PO-Revision-Date: 2024-11-18 19:43+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: sale_category_pricelist
+#: model:ir.model.fields,field_description:sale_category_pricelist.field_product_sale_category__product_count
+msgid "# Products"
+msgstr "# Productos"
+
+#. module: sale_category_pricelist
+#: model_terms:ir.ui.view,arch_db:sale_category_pricelist.product_sale_category_form_view
+msgid "<span class=\"o_stat_text\"> Products</span>"
+msgstr "<span class=\"o_stat_text\"> Productos</span>"
+
+#. module: sale_category_pricelist
+#: model:ir.model.fields,field_description:sale_category_pricelist.field_product_pricelist_item__applied_on
+msgid "Apply On"
+msgstr "Aplicar Sobre"
+
+#. module: sale_category_pricelist
+#: model:ir.model.fields,field_description:sale_category_pricelist.field_product_sale_category__child_id
+msgid "Child Categories"
+msgstr "Categorías hijas"
+
+#. module: sale_category_pricelist
+#: model:ir.model.fields,field_description:sale_category_pricelist.field_product_sale_category__complete_name
+msgid "Complete Name"
+msgstr "Nombre completo"
+
+#. module: sale_category_pricelist
+#: model:ir.model.fields,field_description:sale_category_pricelist.field_product_sale_category__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: sale_category_pricelist
+#: model:ir.model.fields,field_description:sale_category_pricelist.field_product_sale_category__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: sale_category_pricelist
+#: model:ir.model.fields,field_description:sale_category_pricelist.field_product_sale_category__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: sale_category_pricelist
+#: model:ir.model.fields,field_description:sale_category_pricelist.field_product_sale_category__id
+msgid "ID"
+msgstr ""
+
+#. module: sale_category_pricelist
+#: model:ir.model.fields,field_description:sale_category_pricelist.field_product_sale_category____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: sale_category_pricelist
+#: model:ir.model.fields,field_description:sale_category_pricelist.field_product_sale_category__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: sale_category_pricelist
+#: model:ir.model.fields,field_description:sale_category_pricelist.field_product_sale_category__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: sale_category_pricelist
+#: model:ir.model.fields,field_description:sale_category_pricelist.field_product_sale_category__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: sale_category_pricelist
+#: model:ir.model.fields,field_description:sale_category_pricelist.field_product_sale_category__parent_id
+msgid "Parent Category"
+msgstr "Categoría padre"
+
+#. module: sale_category_pricelist
+#: model:ir.model.fields,field_description:sale_category_pricelist.field_product_sale_category__parent_path
+msgid "Parent Path"
+msgstr "Ruta padres"
+
+#. module: sale_category_pricelist
+#: model:ir.model.fields,help:sale_category_pricelist.field_product_pricelist_item__applied_on
+msgid "Pricelist Item applicable on selected option"
+msgstr "Elemento de tarifa aplicable a la opción seleccionada"
+
+#. module: sale_category_pricelist
+#: model:ir.model,name:sale_category_pricelist.model_product_pricelist_item
+msgid "Pricelist Rule"
+msgstr "Regla de Tarifa"
+
+#. module: sale_category_pricelist
+#: model:ir.model,name:sale_category_pricelist.model_product_template
+msgid "Product"
+msgstr "Producto"
+
+#. module: sale_category_pricelist
+#: model:ir.actions.act_window,name:sale_category_pricelist.product_sale_category_action_form
+#: model:ir.ui.menu,name:sale_category_pricelist.menu_product_sale_categories
+#: model_terms:ir.ui.view,arch_db:sale_category_pricelist.product_sale_category_search_view
+msgid "Product Sale Categories"
+msgstr "Categorías de venta de producto"
+
+#. module: sale_category_pricelist
+#: model:ir.model,name:sale_category_pricelist.model_product_sale_category
+#: model:ir.model.fields,field_description:sale_category_pricelist.field_product_pricelist_item__sale_categ_id
+#: model:ir.model.fields,field_description:sale_category_pricelist.field_product_product__sale_categ_id
+#: model:ir.model.fields,field_description:sale_category_pricelist.field_product_template__sale_categ_id
+#: model:ir.model.fields.selection,name:sale_category_pricelist.selection__product_pricelist_item__applied_on__2_0_product_sale_category
+#: model_terms:ir.ui.view,arch_db:sale_category_pricelist.product_sale_category_list_view
+#: model_terms:ir.ui.view,arch_db:sale_category_pricelist.product_template_search_view_sale_categ
+msgid "Product Sale Category"
+msgstr "Categoría de venta de producto"
+
+#. module: sale_category_pricelist
+#: model_terms:ir.ui.view,arch_db:sale_category_pricelist.product_sale_category_form_view
+msgid "Sale Category"
+msgstr "Categoría de venta"
+
+#. module: sale_category_pricelist
+#. odoo-python
+#: code:addons/sale_category_pricelist/models/product_pricelist_item.py:0
+#, python-format
+msgid "Sale Category: {}"
+msgstr "Categoría de venta: {}"
+
+#. module: sale_category_pricelist
+#: model:ir.model.fields,help:sale_category_pricelist.field_product_pricelist_item__sale_categ_id
+msgid ""
+"Specify a product sale category if this rule only applies to products "
+"belonging to this category or its children categories. Keep empty otherwise."
+msgstr ""
+"Especifique una categoría de venta de productos si esta regla solo se "
+"aplica a productos que pertenecen a esta categoría o a sus categorías "
+"secundarias. De lo contrario, deje el campo vacío."
+
+#. module: sale_category_pricelist
+#: model:ir.model.fields,help:sale_category_pricelist.field_product_sale_category__product_count
+msgid ""
+"The number of products under this category(Does not consider the children "
+"categories)"
+msgstr ""
+"Número de productos en esta categoría (no considera las categorías "
+"infantiles)"
+
+#. module: sale_category_pricelist
+#. odoo-python
+#: code:addons/sale_category_pricelist/models/product_sale_category.py:0
+#, python-format
+msgid "You cannot create recursive categories."
+msgstr "No puedes crear categorías recursivas"
+
+#. module: sale_category_pricelist
+#. odoo-python
+#: code:addons/sale_category_pricelist/models/product_sale_category.py:0
+#, python-format
+msgid "You cannot delete the %s product category."
+msgstr "No puedes borrar la categoría de producto %s."
+
+#. module: sale_category_pricelist
+#: model_terms:ir.ui.view,arch_db:sale_category_pricelist.product_sale_category_form_view
+msgid "e.g. Lamps"
+msgstr ""
