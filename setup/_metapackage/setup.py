@@ -9,6 +9,7 @@ setuptools.setup(
     version=version,
     install_requires=[
         'odoo-addon-product_search_category_attribute_sale>=16.0dev,<16.1dev',
+        'odoo-addon-sale_category_pricelist>=16.0dev,<16.1dev',
         'odoo-addon-sale_disable_cancel_warning>=16.0dev,<16.1dev',
         'odoo-addon-sale_order_line_view_negative_margin>=16.0dev,<16.1dev',
         'odoo-addon-sale_stock_deposit>=16.0dev,<16.1dev',
