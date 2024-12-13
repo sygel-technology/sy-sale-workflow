@@ -7,7 +7,8 @@ convert_readme_fragments_to_markdown: true
 enable_checklog_odoo: false
 generate_requirements_txt: true
 github_check_license: true
-github_ci_extra_env: {}
+github_ci_extra_env:
+    PIP_INDEX_URL: https://pypi.org/simple/
 github_enable_codecov: true
 github_enable_makepot: false
 github_enable_stale_action: true
