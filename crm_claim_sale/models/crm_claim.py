@@ -20,7 +20,7 @@ class CrmClaim(models.Model):
             groupby=["claim_id"],
             lazy=False,
         )
-        unit_count_dict = dict((d["claim_id"][0], d["__count"]) for d in res)
+        unit_count_dict = {d["claim_id"][0]: d["__count"] for d in res}
         for claim in self:
             claim.quotation_and_order_count = unit_count_dict.get(claim.id, 0)
 
