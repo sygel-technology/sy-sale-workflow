@@ -46,10 +46,10 @@ class ProductSaleCategory(models.Model):
             ["sale_categ_id"],
             ["sale_categ_id"],
         )
-        group_data = dict(
-            (data["sale_categ_id"][0], data["sale_categ_id_count"])
+        group_data = {
+            data["sale_categ_id"][0]: data["sale_categ_id_count"]
             for data in read_group_res
-        )
+        }
         for categ in self:
             product_count = 0
             for sub_categ_id in categ.search([("id", "child_of", categ.ids)]).ids:
