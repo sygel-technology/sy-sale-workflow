@@ -2,9 +2,9 @@
     :target: http://www.gnu.org/licenses/agpl
     :alt: License: AGPL-3
 
-=========================================
+==========================================
 SO Sequence Duplicate Confirmed Order Type
-=========================================
+==========================================
 
 This module is an extension of the modules 'so_sequence_duplicate_order' and 'so_sequence_confirmed_order_type'.  
 

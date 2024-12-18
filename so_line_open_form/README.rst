@@ -2,11 +2,11 @@
     :target: http://www.gnu.org/licenses/agpl
     :alt: License: AGPL-3
 
-==================================
-Sale Automatic Workflow Order Type
-==================================
+=========================
+Sale Order Line Open Form
+=========================
 
-This module allows you to run workflows depending on the type of sales order. 
+This module allow you to open form view when click on sale order line.
 
 
 Installation
@@ -22,10 +22,7 @@ Configuration
 
 To configure this module, you need to:
 
-#. Go to the sales module
-#. Configuration -> Sales Order Types
-#. Create a new sales order or Edit an existing one.
-#. Select the automatic workflow you want to run for that type of sales order.
+#. Nothing
 
 
 Usage
@@ -33,9 +30,11 @@ Usage
 
 To use this module, you need to:
 
-#. Create a sales order
-#. Select the sales order type
-#. The "Automatic workflow" field in the "Automation Information" tab will change depending on the type of sales order. 
+#. Go to the Sales module.
+#. Create a new quotation.
+#. Add or edit a sale order line.
+
+You will see how the form view of the sale order line opens up.
 
 
 Bug Tracker
@@ -57,10 +56,10 @@ Authors
 
 * Sygel, Odoo Community Association (OCA)
 
-
 Contributors
 ~~~~~~~~~~~~
 
+* Manuel Regidor <manuel.regidor@sygel.es>
 * Ángel García de la Chica Herrera <angel.garcia@sygel.es>
 
 
