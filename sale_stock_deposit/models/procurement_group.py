@@ -13,12 +13,12 @@ class ProcurementGroup(models.Model):
         res = self.env["stock.rule"]
         partner_id = self.env.context.get("partner_id", False)
         if partner_id:
-            partner = self.env["res.partner"].browse(partner_id)
+            partner = partner_id.commercial_partner_id
             Rule = self.env["stock.rule"]
             location = self.env["stock.location"].search(
                 [
                     ("deposit_location", "=", True),
-                    ("partner_id", "=", partner_id.id),
+                    ("partner_id", "=", partner.id),
                     ("warehouse_id", "=", warehouse_id.id),
                 ],
                 limit=1,
