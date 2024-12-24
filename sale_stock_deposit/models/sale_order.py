@@ -21,7 +21,7 @@ class SaleOrder(models.Model):
             if line.route_id.deposit_operation:
                 locations = self.env["stock.location"].search(
                     [
-                        ("partner_id", "=", self.partner_id.id),
+                        ("partner_id", "=", self.partner_id.commercial_partner_id.id),
                         ("deposit_location", "=", True),
                         ("usage", "=", "internal"),
                         ("warehouse_id", "=", self.warehouse_id.id),
