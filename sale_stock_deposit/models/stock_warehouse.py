@@ -55,6 +55,7 @@ class Warehouse(models.Model):
                 "use_existing_lots": True,
                 "default_location_src_id": default_location_src_id,
                 "default_location_dest_id": default_location_dest_id,
+                "warehouse_id": warehouse.id,
             }
         ]
 
@@ -76,13 +77,12 @@ class Warehouse(models.Model):
             }
         ]
 
-    def _get_vals_deposit_rule(self, warehouse, route, deposit, operation_type_id=None):
+    def _get_vals_deposit_rule(self, warehouse, route, deposit, operation_type_id):
         name = _("{}/ Deposit -> Customer").format(warehouse.code)
         location_src_id = deposit
         location_dest_id = self.env.ref("stock.stock_location_customers")
         if route.deposit_operation_type == "delivery_deposit":
             name = _("{}/ Stock -> Deposit").format(warehouse.code)
-            operation_type_id = warehouse.out_type_id
             location_src_id = warehouse.lot_stock_id
             location_dest_id = deposit
         return [
@@ -128,7 +128,7 @@ class Warehouse(models.Model):
             )
             self.env["stock.rule"].create(
                 self._get_vals_deposit_rule(
-                    warehouse, route_delivery_deposit, general_deposit_id
+                    warehouse, route_delivery_deposit, general_deposit_id, type_outgoing
                 )
             )
 
