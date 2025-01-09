@@ -12,7 +12,7 @@ class SaleAdvancePaymentInv(models.TransientModel):
         sale_order_invoicing_picking_filter's custom invoice creation
         """
         if not (self.advance_payment_method == "delivered" and self.stock_picking_ids):
-            return super()._create_invoices()
+            return super()._create_invoices(sale_orders)
 
         order_groups = {}
         for order in self.sale_order_ids:
