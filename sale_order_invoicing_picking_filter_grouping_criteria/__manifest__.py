@@ -3,7 +3,7 @@
 {
     "name": "Sale Order Invoicing Picking Filter Grouping Criteria",
     "summary": "Glues the picking filter with sale_order_invoicing_grouping_criteria",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.1.0",
     "category": "Invoicing",
     "website": "https://github.com/sygel-technology/sy-sale-workflow",
     "author": "Sygel, Odoo Community Association (OCA)",
