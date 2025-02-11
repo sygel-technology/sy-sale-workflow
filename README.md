@@ -27,6 +27,7 @@ addon | version | maintainers | summary
 [sale_order_invoicing_picking_filter_grouping_criteria](sale_order_invoicing_picking_filter_grouping_criteria/) | 16.0.1.1.0 | [![tisho99](https://github.com/tisho99.png?size=30px)](https://github.com/tisho99) | Glues the picking filter with sale_order_invoicing_grouping_criteria
 [sale_order_line_view_negative_margin](sale_order_line_view_negative_margin/) | 16.0.1.0.0 |  | Sale Order Line turns red if margin is negative or 0
 [sale_stock_deposit](sale_stock_deposit/) | 16.0.1.2.0 |  | Sale Stock deposit
+[sale_stock_deposit_margin](sale_stock_deposit_margin/) | 16.0.1.0.0 |  | Module summary
 [so_group_stock_user_read](so_group_stock_user_read/) | 16.0.1.0.1 |  | Sale Order Group Stock User Read
 [so_line_open_form](so_line_open_form/) | 16.0.1.0.0 |  | Open form view when click on sale order line.
 

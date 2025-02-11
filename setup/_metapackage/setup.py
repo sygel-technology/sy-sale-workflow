@@ -14,6 +14,7 @@ setuptools.setup(
         'odoo-addon-sale_order_invoicing_picking_filter_grouping_criteria>=16.0dev,<16.1dev',
         'odoo-addon-sale_order_line_view_negative_margin>=16.0dev,<16.1dev',
         'odoo-addon-sale_stock_deposit>=16.0dev,<16.1dev',
+        'odoo-addon-sale_stock_deposit_margin>=16.0dev,<16.1dev',
         'odoo-addon-so_group_stock_user_read>=16.0dev,<16.1dev',
         'odoo-addon-so_line_open_form>=16.0dev,<16.1dev',
     ],
