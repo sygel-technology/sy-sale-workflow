@@ -21,6 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[odoo_2_odoo_sale_no_picking](odoo_2_odoo_sale_no_picking/) | 16.0.1.0.0 |  | Avoid picking creation from sale orders created using Odoo 2 Odoo Data Transfer
 [product_search_category_attribute_sale](product_search_category_attribute_sale/) | 16.0.1.0.0 |  | Search products in sales by category and attributes
 [sale_category_pricelist](sale_category_pricelist/) | 16.0.1.0.0 |  | Adds a new type of categorization to pricelists
 [sale_disable_cancel_warning](sale_disable_cancel_warning/) | 16.0.1.0.0 |  | Adds an option to disable the sale cancel warning wizard

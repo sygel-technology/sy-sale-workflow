@@ -8,6 +8,7 @@ setuptools.setup(
     description="Meta package for sygel-technology-sy-sale-workflow Odoo addons",
     version=version,
     install_requires=[
+        'odoo-addon-odoo_2_odoo_sale_no_picking>=16.0dev,<16.1dev',
         'odoo-addon-product_search_category_attribute_sale>=16.0dev,<16.1dev',
         'odoo-addon-sale_category_pricelist>=16.0dev,<16.1dev',
         'odoo-addon-sale_disable_cancel_warning>=16.0dev,<16.1dev',
