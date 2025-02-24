@@ -1,0 +1,6 @@
+id,transfer_id/id,remote_source_field,local_target_field_id/id,relational_migration_method,remote_identifier_field,local_identifier_field_id/id,manual_id_mappings,skip_relational_errors,one2many_template_id/id,related_model
+odoo_2_odoo_sale_no_picking.template_sale_line_1,odoo_2_odoo_sale_no_picking.template_sale,partner_id,sale.field_sale_order__partner_id,Match Keys,id,base.field_res_partner__id,{},,,res.partner
+odoo_2_odoo_sale_no_picking.template_sale_line_2,odoo_2_odoo_sale_no_picking.template_sale,order_line,sale.field_sale_order__order_line,Match Keys,,,{},,odoo_2_odoo_sale_no_picking.template_sale_line,sale.order.line
+odoo_2_odoo_sale_no_picking.template_sale_line_3,odoo_2_odoo_sale_no_picking.template_sale,state,sale.field_sale_order__state,Match Keys,,,{},,odoo_2_odoo_sale_no_picking.template_sale_line,
+odoo_2_odoo_sale_no_picking.template_sale_line_line_1,odoo_2_odoo_sale_no_picking.template_sale_line,name,sale.field_sale_order_line__name,Match Keys,,,{},,,
+odoo_2_odoo_sale_no_picking.template_sale_line_line_2,odoo_2_odoo_sale_no_picking.template_sale_line,product_id,sale.field_sale_order_line__product_id,Match Keys,id,product.field_product_product__id,{},,,product.product

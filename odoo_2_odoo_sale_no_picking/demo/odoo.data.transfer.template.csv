@@ -1,0 +1,3 @@
+"id","name","description","local_target_model_id","remote_source_model_name","domain","is_many2one_template"
+"odoo_2_odoo_sale_no_picking.template_sale","Test Sale Order Template","","Sales Order","sale.order","[('state', '=', 'sale')]",""
+"odoo_2_odoo_sale_no_picking.template_sale_line","Test Sale Order Line Template","","Sales Order Line","sale.order.line","[]","True"
