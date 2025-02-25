@@ -6,7 +6,7 @@
     "summary": """
         Avoid picking creation from sale orders created using Odoo 2
         Odoo Data Transfer""",
-    "version": "16.0.1.0.0",
+    "version": "17.0.1.0.0",
     "license": "AGPL-3",
     "author": "Sygel",
     "category": "Custom",
