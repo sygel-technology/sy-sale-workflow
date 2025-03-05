@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="product_campaign_form_view" model="ir.ui.view">
+        <field name="name">product.campaign.form.view</field>
+        <field name="model">product.campaign</field>
+        <field name="mode">primary</field>
+        <field name="arch" type="xml">
+            <form string="Products Price List">
+                <sheet>
+                    <widget
+                        name="web_ribbon"
+                        title="Archived"
+                        bg_color="text-bg-danger"
+                        invisible="active"
+                    />
+                    <div class="oe_title">
+                        <h1><field name="name" /></h1>
+                    </div>
+                    <group>
+                        <group name="pricelist_settings">
+                            <field name="active" invisible="1" />
+                            <field
+                                name="company_id"
+                                groups="base.group_multi_company"
+                                options="{'no_create': True}"
+                            />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="pricelist_rules" string="Price Rules">
+                            <field
+                                name="product_campaign_item_ids"
+                                nolabel="1"
+                                context="{'default_base':'list_price'}"
+                            >
+                                <tree groups="product.group_sale_pricelist">
+                                    <field name="name" string="Applicable On" />
+                                    <field name="min_quantity" />
+                                    <field name="date_start" />
+                                    <field name="date_end" />
+                                    <field name="applied_on" column_invisible="True" />
+                                    <field
+                                        name="compute_price"
+                                        column_invisible="True"
+                                    />
+                                </tree>
+                                <form string="Rule">
+                                    <sheet>
+                                        <field name="name" invisible="1" />
+                                        <field name="company_id" invisible="1" />
+                                        <group
+                                            name="pricelist_rule_computation"
+                                            groups="product.group_sale_pricelist"
+                                            string="Price Computation"
+                                        >
+                                            <group name="pricelist_rule_method">
+                                                <field
+                                                    name="compute_price"
+                                                    string="Computation"
+                                                    widget="radio"
+                                                />
+                                            </group>
+                                        </group>
+                                        <group
+                                            name="pricelist_rule_base"
+                                            groups="product.group_sale_pricelist"
+                                        >
+                                            <group>
+                                                <field
+                                                    name="fixed_price"
+                                                    invisible="compute_price != 'fixed'"
+                                                    options="{'field_digits': True}"
+                                                />
+                                                <label
+                                                    for="percent_price"
+                                                    string="Discount"
+                                                    invisible="compute_price != 'percentage'"
+                                                />
+                                                <div
+                                                    class="o_row"
+                                                    invisible="compute_price != 'percentage'"
+                                                >
+                                                    <field
+                                                        name="percent_price"
+                                                        class="oe_inline"
+                                                        invisible="compute_price != 'percentage'"
+                                                    />%
+                                                </div>
+                                            </group>
+                                        </group>
+                                        <group string="Conditions">
+                                            <group name="pricelist_rule_target">
+                                                <field
+                                                    name="applied_on"
+                                                    widget="radio"
+                                                />
+                                                <field
+                                                    name="categ_id"
+                                                    options="{'no_create':1}"
+                                                    invisible="applied_on != '2_product_category'"
+                                                    required="applied_on == '2_product_category'"
+                                                />
+                                                <field
+                                                    name="product_tmpl_id"
+                                                    options="{'no_create':1}"
+                                                    invisible="applied_on != '1_product'"
+                                                    required="applied_on == '1_product'"
+                                                />
+                                                <field
+                                                    name="product_id"
+                                                    options="{'no_create':1}"
+                                                    invisible="applied_on != '0_product_variant'"
+                                                    required="applied_on == '0_product_variant'"
+                                                />
+                                            </group>
+                                            <group name="pricelist_rule_limits">
+                                                <field name="min_quantity" />
+                                                <field
+                                                    name="date_start"
+                                                    string="Validity"
+                                                    widget="daterange"
+                                                    options="{'end_date_field': 'date_end'}"
+                                                />
+                                                <field name="date_end" invisible="1" />
+                                            </group>
+                                        </group>
+                                    </sheet>
+                                </form>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="product_campaign_action" model="ir.actions.act_window">
+        <field name="name">Promotions</field>
+        <field name="res_model">product.campaign</field>
+        <field name="view_mode">tree,kanban,form</field>
+    </record>
+    <menuitem
+        id="menu_product_campaign"
+        name="Promotions"
+        action="product_campaign_action"
+        parent="sale.product_menu_catalog"
+        sequence="20"
+    />
+</odoo>
