@@ -16,5 +16,6 @@
         "security/queued_sale_notify_security.xml",
         "security/ir.model.access.csv",
         "views/sale_order_type_view.xml",
+        "views/sale_order.xml",
     ],
 }
