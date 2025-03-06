@@ -11,10 +11,9 @@
                 <page
                     string="Mail Queues"
                     name="mail_queues"
-                    invisible="has_queues == False"
+                    invisible="not mail_queue_ids"
                 >
                     <field name="mail_queue_ids" />
-                    <field name="has_queues" invisible="1" />
                 </page>
             </xpath>
         </field>

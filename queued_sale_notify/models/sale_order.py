@@ -2,7 +2,7 @@
 # Copyright 2020 Manuel Regidor <manuel.regidor@sygel.es>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import api, fields, models
+from odoo import fields, models
 
 
 class SaleOrder(models.Model):
@@ -11,7 +11,6 @@ class SaleOrder(models.Model):
     mail_queue_ids = fields.Many2many(
         string="Mail Queues", comodel_name="queue.job", compute="_compute_mail_queues"
     )
-    has_queues = fields.Boolean(readonly=True, compute="_compute_has_queues")
 
     def action_confirm(self):
         res = super().action_confirm()
@@ -38,8 +37,3 @@ class SaleOrder(models.Model):
                 )
                 .ids
             )
-
-    @api.depends("mail_queue_ids")
-    def _compute_has_queues(self):
-        for obj in self:
-            obj.has_queues = True if obj.mail_queue_ids else False
