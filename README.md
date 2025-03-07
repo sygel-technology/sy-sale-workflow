@@ -21,7 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[queued_sale_notify](queued_sale_notify/) | 17.0.1.0.0 |  | Schedule email/logs/activities notificacions on sales
+[queued_sale_notify](queued_sale_notify/) | 17.0.1.1.0 |  | Schedule email/logs/activities notificacions on sales
 
 [//]: # (end addons)
 
