@@ -1,11 +1,16 @@
+# Copyright 2025 Valentin Vinagre <valentin.vinagre@sygel.es>
 # Copyright 2020 Manuel Regidor <manuel.regidor@sygel.es>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import models
+from odoo import fields, models
 
 
 class SaleOrder(models.Model):
     _inherit = "sale.order"
+
+    mail_queue_ids = fields.Many2many(
+        string="Mail Queues", comodel_name="queue.job", compute="_compute_mail_queues"
+    )
 
     def action_confirm(self):
         res = super().action_confirm()
@@ -16,3 +21,19 @@ class SaleOrder(models.Model):
                     if notify_id.is_to_notify(rec):
                         notify_id.notify(rec)
         return res
+
+    def _compute_mail_queues(self):
+        for obj in self:
+            obj.mail_queue_ids = (
+                self.env["queue.job"]
+                .search(
+                    [
+                        [
+                            "func_string",
+                            "=like",
+                            f"sale.mail.notify(%,)._notify_thread(sale.order({obj.id},))",
+                        ]
+                    ]
+                )
+                .ids
+            )
