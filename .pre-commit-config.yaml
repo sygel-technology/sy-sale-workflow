@@ -61,7 +61,7 @@ repos:
         args:
           - --disable=po-pretty-format
   - repo: https://github.com/myint/autoflake
-    rev: v1.4
+    rev: v1.5.3
     hooks:
       - id: autoflake
         args:
@@ -102,8 +102,9 @@ repos:
         types: [javascript]
         language: node
         additional_dependencies:
-          - "eslint@7.32.0"
+          - "eslint@v7.32.0"
           - "eslint-plugin-jsdoc@"
+          - "globals@"
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.0.1
     hooks:
@@ -150,7 +151,7 @@ repos:
           - --header
           - "# generated from manifests external_dependencies"
   - repo: https://github.com/PyCQA/flake8
-    rev: 3.9.2
+    rev: 5.0.0
     hooks:
       - id: flake8
         name: flake8
