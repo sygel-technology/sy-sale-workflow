@@ -10,3 +10,4 @@ from . import sale_order_line
 from . import procurement_group
 from . import res_partner
 from . import stock_warehouse
+from . import product_product
