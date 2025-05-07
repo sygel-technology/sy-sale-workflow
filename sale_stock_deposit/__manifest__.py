@@ -4,7 +4,7 @@
 {
     "name": "Sale Stock Deposit",
     "summary": "Sale Stock deposit",
-    "version": "16.0.1.2.0",
+    "version": "16.0.1.3.0",
     "license": "AGPL-3",
     "author": "Sygel",
     "website": "https://github.com/sygel-technology/sy-sale-workflow",
