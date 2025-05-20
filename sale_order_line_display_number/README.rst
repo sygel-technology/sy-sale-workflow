@@ -42,7 +42,6 @@ ROADMAP
   It is mostly intended for end-users, and can also help
   potential new contributors discovering new features to implement. ]
 
-* ...
 
 
 Bug Tracker
@@ -70,11 +69,6 @@ Contributors
 
 * Manuel Regidor <manuel.regidor@sygel.es>
 
-
-Maintainer
-~~~~~~~~~~
-
-This module is maintained by Sygel.
 
 Maintainer
 ~~~~~~~~~~
