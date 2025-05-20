@@ -15,17 +15,15 @@ odoo.define(
                     this.modelParams.modelName === "sale.order" &&
                     this.fieldsView.name === "sale.order.form"
                 ) {
-                    const limit = rpc
-                        .query({
-                            model: "ir.config_parameter",
-                            method: "get_param",
-                            args: ["sale_order_line_display_number.number"],
-                        })
-                        .then((res) => {
-                            if (!_.isUndefined(res)) {
-                                attrs.limit = parseInt(res);
-                            }
-                        });
+                    rpc.query({
+                        model: "ir.config_parameter",
+                        method: "get_param",
+                        args: ["sale_order_line_display_number.number"],
+                    }).then((res) => {
+                        if (!_.isUndefined(res)) {
+                            attrs.limit = parseInt(res, 10);
+                        }
+                    });
                 }
             },
         });
