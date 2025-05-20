@@ -12,13 +12,13 @@ class SaleOrder(models.Model):
     _inherit = "sale.order"
 
     monthly_invoicing = fields.Boolean(
-        compute="get_monthly_invoicing",
+        compute="_compute_get_monthly_invoicing",
         store=True,
         string="Automatic Monthly Invoicing",
     )
 
     @api.depends("partner_invoice_id")
-    def get_monthly_invoicing(self):
+    def _compute_get_monthly_invoicing(self):
         for order in self:
             order.monthly_invoicing = order.partner_invoice_id.monthly_invoicing
 

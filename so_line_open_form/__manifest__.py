@@ -5,6 +5,7 @@
     "name": "Sale Order Line Open Form",
     "version": "15.0.1.0.1",
     "author": "Sygel",
+    "license": "AGPL-3",
     "category": "Sale",
     "summary": "Open form view when click on sale order line.",
     "website": "https://github.com/sygel-technology/sy-sale-workflow",

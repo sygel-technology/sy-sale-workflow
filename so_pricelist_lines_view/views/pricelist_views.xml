@@ -6,7 +6,7 @@
         <field name="name">so.pricelist.lines.view</field>
         <field name="model">product.pricelist.item</field>
         <field name="arch" type="xml">
-            <tree string="Pricelist Lines">
+            <tree>
                 <field name="pricelist_id" />
                 <field name="name" />
                 <field name="min_quantity" />
