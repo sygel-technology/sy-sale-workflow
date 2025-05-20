@@ -32,7 +32,7 @@
         <field name="name">sale.order.requirement.rule.tree.view</field>
         <field name="model">sale.order.requirement.rule</field>
         <field name="arch" type="xml">
-            <tree string="Sale Order Requirement Rule">
+            <tree>
                 <field name="name" />
                 <field name="domain" />
             </tree>
