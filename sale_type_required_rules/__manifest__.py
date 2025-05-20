@@ -3,7 +3,7 @@
 
 {
     "name": "Sale Type Required Rules",
-    "version": "15.0.1.0.0",
+    "version": "15.0.1.0.1",
     "summary": "Required domain conditions when validating a Sale Order.",
     "website": "https://github.com/sygel-technology/sy-sale-workflow",
     "author": "Sygel, Odoo Community Association (OCA)",

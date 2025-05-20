@@ -4,7 +4,7 @@
 {
     "name": "Automatic Monhly Invoicig",
     "summary": "Automatic Monhly Invoicig.",
-    "version": "15.0.1.0.0",
+    "version": "15.0.1.0.1",
     "category": "Accounting",
     "website": "https://github.com/sygel-technology/sy-sale-workflow",
     "author": "Sygel, Odoo Community Association (OCA)",

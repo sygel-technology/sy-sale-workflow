@@ -4,7 +4,7 @@
 {
     "name": "Sale Order Line Min. Margin",
     "summary": "Set minimum margin in sale order lines",
-    "version": "15.0.1.0.0",
+    "version": "15.0.1.0.1",
     "category": "Product",
     "website": "https://github.com/sygel-technology/sy-sale-workflow",
     "author": "Sygel",

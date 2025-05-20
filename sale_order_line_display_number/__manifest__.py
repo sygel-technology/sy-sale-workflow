@@ -4,7 +4,7 @@
 {
     "name": "Sale Order Line Display Number",
     "summary": "Configure the number of sale order lines to be shown",
-    "version": "15.0.1.0.0",
+    "version": "15.0.1.0.1",
     "category": "Sale",
     "website": "https://github.com/sygel-technology/sy-sale-workflow",
     "author": "Sygel, Odoo Community Association (OCA)",
