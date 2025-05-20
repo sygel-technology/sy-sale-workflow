@@ -10,4 +10,4 @@ class SaleOrderTypology(models.Model):
     required_rule_ids = fields.Many2many(
         string="Order Required Rules", comodel_name="sale.order.required.rule"
     )
-    use_required_rules = fields.Boolean(string="Use Required Rules")
+    use_required_rules = fields.Boolean()
