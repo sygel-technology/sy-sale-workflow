@@ -22,9 +22,8 @@ class SaleOrderLine(models.Model):
                     "warning": {
                         "title": _("Margin Warning"),
                         "message": _(
-                            "The minimum margin set in company is {}%".format(
-                                company.so_line_min_margin
-                            )
-                        ),
+                            "The minimum margin set in company is %(margin)s%%"
+                        )
+                        % {"margin": company.so_line_min_margin},
                     }
                 }
