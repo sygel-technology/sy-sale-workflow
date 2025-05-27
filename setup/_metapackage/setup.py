@@ -20,6 +20,7 @@ setuptools.setup(
         'odoo-addon-sale_order_line_min_margin>=15.0dev,<15.1dev',
         'odoo-addon-sale_type_confirmation_requirement_rules>=15.0dev,<15.1dev',
         'odoo-addon-sale_type_required_rules>=15.0dev,<15.1dev',
+        'odoo-addon-so_line_description_picking>=15.0dev,<15.1dev',
         'odoo-addon-so_line_description_without_internal_ref>=15.0dev,<15.1dev',
         'odoo-addon-so_line_open_form>=15.0dev,<15.1dev',
         'odoo-addon-so_line_product_template_visibility>=15.0dev,<15.1dev',

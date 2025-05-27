@@ -33,6 +33,7 @@ addon | version | maintainers | summary
 [sale_order_line_min_margin](sale_order_line_min_margin/) | 15.0.1.0.1 |  | Set minimum margin in sale order lines
 [sale_type_confirmation_requirement_rules](sale_type_confirmation_requirement_rules/) | 15.0.1.0.1 |  | Required domain conditions when validating a Sale Order.
 [sale_type_required_rules](sale_type_required_rules/) | 15.0.1.0.1 |  | Required domain conditions when validating a Sale Order.
+[so_line_description_picking](so_line_description_picking/) | 15.0.1.0.0 |  | Propagate SO Line description to picking form and reports
 [so_line_description_without_internal_ref](so_line_description_without_internal_ref/) | 15.0.1.0.1 |  | SO Line Description Without Internal Reference
 [so_line_open_form](so_line_open_form/) | 15.0.1.0.2 |  | Open form view when click on sale order line.
 [so_line_product_template_visibility](so_line_product_template_visibility/) | 15.0.1.0.1 |  | SO Line Product Template Visibility
