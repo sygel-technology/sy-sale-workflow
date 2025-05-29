@@ -23,6 +23,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [queued_sale_notify](queued_sale_notify/) | 17.0.1.1.0 |  | Schedule email/logs/activities notificacions on sales
 [sale_automatic_workflow_order_type](sale_automatic_workflow_order_type/) | 17.0.1.0.0 |  | Sale Automatic Workflow Order Type
+[sale_promotion](sale_promotion/) | 17.0.1.0.0 |  | Sale Promotion
 
 [//]: # (end addons)
 
