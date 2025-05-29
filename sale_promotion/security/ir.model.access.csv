@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_product_campaign_manager,product.campaign.manager,model_product_campaign,base.group_system,1,1,1,1
+access_product_campaign_item_manager,product.campaign.item.manager,model_product_campaign_item,base.group_system,1,1,1,1
+access_sale_campaign_manager,access.sale.campaign.manager,model_sale_campaign,base.group_system,1,1,1,1

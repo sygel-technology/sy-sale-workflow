@@ -1,0 +1,320 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_promotion
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-20 13:49+0000\n"
+"PO-Revision-Date: 2025-03-20 14:50+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ca_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.4\n"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign__active
+#: model:ir.model.fields,field_description:sale_promotion.field_sale_campaign__active
+msgid "Active"
+msgstr "Actiu"
+
+#. module: sale_promotion
+#. odoo-python
+#: code:addons/sale_promotion/models/product_campaign_item.py:0
+#: model:ir.model.fields.selection,name:sale_promotion.selection__product_campaign_item__applied_on__3_global
+#, python-format
+msgid "All Products"
+msgstr "Tots els productes"
+
+#. module: sale_promotion
+#: model_terms:ir.ui.view,arch_db:sale_promotion.product_campaign_form_view
+msgid "Applicable On"
+msgstr "Aplicable a"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign_item__applied_on
+msgid "Apply On"
+msgstr "Aplicar a"
+
+#. module: sale_promotion
+#: model_terms:ir.ui.view,arch_db:sale_promotion.sale_promotion_view_order_form
+msgid "Apply Promotion"
+msgstr "Aplicar promoció"
+
+#. module: sale_promotion
+#: model_terms:ir.ui.view,arch_db:sale_promotion.product_campaign_form_view
+#: model_terms:ir.ui.view,arch_db:sale_promotion.view_campaign_form_view
+msgid "Archived"
+msgstr "Arxivat"
+
+#. module: sale_promotion
+#: model:ir.model,name:sale_promotion.model_sale_campaign
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign_item__product_campaign_id
+#: model_terms:ir.ui.view,arch_db:sale_promotion.view_campaign_form_view
+#: model_terms:ir.ui.view,arch_db:sale_promotion.view_campaign_tree_view
+msgid "Campaign"
+msgstr "Campanya"
+
+#. module: sale_promotion
+#: model:ir.actions.act_window,name:sale_promotion.campaign_action
+#: model:ir.ui.menu,name:sale_promotion.campaign_menu
+msgid "Campaigns"
+msgstr "Campanyes"
+
+#. module: sale_promotion
+#. odoo-python
+#: code:addons/sale_promotion/models/product_campaign_item.py:0
+#, python-format
+msgid "Category: %s"
+msgstr "Categoria: %s"
+
+#. module: sale_promotion
+#: model_terms:ir.actions.act_window,help:sale_promotion.campaign_action
+msgid "Click to create a new Campaign."
+msgstr "Fes click per a crear una nova campanya"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign__company_id
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign_item__company_id
+msgid "Company"
+msgstr "Companyia"
+
+#. module: sale_promotion
+#: model_terms:ir.ui.view,arch_db:sale_promotion.product_campaign_form_view
+msgid "Computation"
+msgstr "Càlcul"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign_item__compute_price
+msgid "Compute Price"
+msgstr "Calcular preu"
+
+#. module: sale_promotion
+#: model_terms:ir.ui.view,arch_db:sale_promotion.product_campaign_form_view
+msgid "Conditions"
+msgstr "Condicions"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign__create_uid
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign_item__create_uid
+#: model:ir.model.fields,field_description:sale_promotion.field_sale_campaign__create_uid
+msgid "Created by"
+msgstr "Creat per"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign__create_date
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign_item__create_date
+#: model:ir.model.fields,field_description:sale_promotion.field_sale_campaign__create_date
+msgid "Created on"
+msgstr "Creat el"
+
+#. module: sale_promotion
+#: model:ir.model.fields.selection,name:sale_promotion.selection__product_campaign_item__compute_price__percentage
+#: model_terms:ir.ui.view,arch_db:sale_promotion.product_campaign_form_view
+msgid "Discount"
+msgstr "Descompte"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign__display_name
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign_item__display_name
+#: model:ir.model.fields,field_description:sale_promotion.field_sale_campaign__display_name
+msgid "Display Name"
+msgstr "Nom a mostrar"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_sale_campaign__end_date
+msgid "End Date"
+msgstr "Data final"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign_item__fixed_price
+#: model:ir.model.fields.selection,name:sale_promotion.selection__product_campaign_item__compute_price__fixed
+msgid "Fixed Price"
+msgstr "Preu fix"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign__id
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign_item__id
+#: model:ir.model.fields,field_description:sale_promotion.field_sale_campaign__id
+msgid "ID"
+msgstr ""
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign__product_campaign_item_ids
+msgid "Items"
+msgstr "Elements"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign__write_uid
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign_item__write_uid
+#: model:ir.model.fields,field_description:sale_promotion.field_sale_campaign__write_uid
+msgid "Last Updated by"
+msgstr "Actualitzat per última vegada per"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign__write_date
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign_item__write_date
+#: model:ir.model.fields,field_description:sale_promotion.field_sale_campaign__write_date
+msgid "Last Updated on"
+msgstr "Actualizat per última vegada el"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign_item__min_quantity
+msgid "Min. Quantity"
+msgstr "Quantitat mínima"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign__name
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign_item__name
+#: model:ir.model.fields,field_description:sale_promotion.field_sale_campaign__name
+#: model_terms:ir.ui.view,arch_db:sale_promotion.view_campaign_form_view
+msgid "Name"
+msgstr "Nom"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign_item__percent_price
+msgid "Percentage Price"
+msgstr "Percentatge al preu"
+
+#. module: sale_promotion
+#. odoo-python
+#: code:addons/sale_promotion/models/product_campaign_item.py:0
+#, python-format
+msgid "Please specify the category for which this rule should be applied"
+msgstr ""
+"Si us plau, especifiqui la categoria per a la qual s'aplica aquesta regla"
+
+#. module: sale_promotion
+#. odoo-python
+#: code:addons/sale_promotion/models/product_campaign_item.py:0
+#, python-format
+msgid "Please specify the product for which this rule should be applied"
+msgstr ""
+"Si us plau, especifiqui el producte per al qual s'aplica aquesta regla"
+
+#. module: sale_promotion
+#. odoo-python
+#: code:addons/sale_promotion/models/product_campaign_item.py:0
+#, python-format
+msgid ""
+"Please specify the product variant for which this rule should be applied"
+msgstr ""
+"Si us plau, especifiqui la variant de producte per a la qual s'aplica "
+"aquesta regla"
+
+#. module: sale_promotion
+#: model_terms:ir.ui.view,arch_db:sale_promotion.product_campaign_form_view
+msgid "Price Computation"
+msgstr "Cálcul de preu"
+
+#. module: sale_promotion
+#: model_terms:ir.ui.view,arch_db:sale_promotion.product_campaign_form_view
+msgid "Price Rules"
+msgstr "Regles de preu"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_sale_campaign__pricelist_ids
+msgid "Pricelists"
+msgstr "Tarifes"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign_item__product_tmpl_id
+#: model:ir.model.fields.selection,name:sale_promotion.selection__product_campaign_item__applied_on__1_product
+msgid "Product"
+msgstr "Producte"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_sale_order_line__product_campaign_id
+msgid "Product Campaign"
+msgstr "Campanya de producte"
+
+#. module: sale_promotion
+#: model:ir.model,name:sale_promotion.model_product_campaign_item
+#: model:ir.model.fields,field_description:sale_promotion.field_sale_order_line__product_campaign_item_id
+msgid "Product Campaign Item"
+msgstr "Element de campanya de producte"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign_item__categ_id
+#: model:ir.model.fields.selection,name:sale_promotion.selection__product_campaign_item__applied_on__2_product_category
+msgid "Product Category"
+msgstr "Categoria de producte"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign_item__product_id
+#: model:ir.model.fields.selection,name:sale_promotion.selection__product_campaign_item__applied_on__0_product_variant
+msgid "Product Variant"
+msgstr "Variant de producte"
+
+#. module: sale_promotion
+#. odoo-python
+#: code:addons/sale_promotion/models/product_campaign_item.py:0
+#, python-format
+msgid "Product: %s"
+msgstr "Producte: %s"
+
+#. module: sale_promotion
+#: model_terms:ir.ui.view,arch_db:sale_promotion.product_campaign_form_view
+msgid "Products Price List"
+msgstr "Lista de preus de producte"
+
+#. module: sale_promotion
+#: model:ir.model,name:sale_promotion.model_product_campaign
+#: model_terms:ir.ui.view,arch_db:sale_promotion.sale_promotion_view_order_form
+msgid "Promotion"
+msgstr "Campanya de producte"
+
+#. module: sale_promotion
+#: model:ir.actions.act_window,name:sale_promotion.product_campaign_action
+#: model:ir.model.fields,field_description:sale_promotion.field_sale_campaign__product_campaign_ids
+#: model:ir.ui.menu,name:sale_promotion.menu_product_campaign
+msgid "Promotions"
+msgstr "Promocions"
+
+#. module: sale_promotion
+#: model_terms:ir.ui.view,arch_db:sale_promotion.product_campaign_form_view
+msgid "Rule"
+msgstr "Regla"
+
+#. module: sale_promotion
+#: model_terms:ir.ui.view,arch_db:sale_promotion.product_campaign_form_view
+msgid "Rules"
+msgstr "Regles"
+
+#. module: sale_promotion
+#: model:ir.model,name:sale_promotion.model_sale_order
+msgid "Sales Order"
+msgstr "Comanda"
+
+#. module: sale_promotion
+#: model:ir.model,name:sale_promotion.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línia comanda de venda"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign_item__date_start
+#: model:ir.model.fields,field_description:sale_promotion.field_sale_campaign__start_date
+msgid "Start Date"
+msgstr "Data d'inici"
+
+#. module: sale_promotion
+#: model:ir.model.fields,field_description:sale_promotion.field_product_campaign_item__date_end
+msgid "Start End"
+msgstr "Data final"
+
+#. module: sale_promotion
+#: model_terms:ir.ui.view,arch_db:sale_promotion.product_campaign_form_view
+msgid "Validity"
+msgstr "Validesa"
+
+#. module: sale_promotion
+#. odoo-python
+#: code:addons/sale_promotion/models/product_campaign_item.py:0
+#, python-format
+msgid "Variant: %s"
+msgstr ""
