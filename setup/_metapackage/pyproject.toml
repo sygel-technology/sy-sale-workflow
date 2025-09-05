@@ -1,10 +1,11 @@
 [project]
 name = "odoo-addons-sygel-technology-sy-sale-workflow"
-version = "17.0.20250617.0"
+version = "17.0.20250905.0"
 dependencies = [
     "odoo-addon-queued_sale_notify>=17.0dev,<17.1dev",
     "odoo-addon-sale_automatic_workflow_order_type>=17.0dev,<17.1dev",
     "odoo-addon-sale_disable_consolidated_billing>=17.0dev,<17.1dev",
+    "odoo-addon-sale_order_line_source_pricelist>=17.0dev,<17.1dev",
     "odoo-addon-sale_promotion>=17.0dev,<17.1dev",
 ]
 classifiers=[
