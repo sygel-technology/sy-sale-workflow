@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Alberto Martínez <alberto.martinez@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record id="view_order_form_pricelist_items" model="ir.ui.view">
+        <field name="name">sale.order.form.pricelist.items</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//field[@name='order_line']/tree//field[@name='price_subtotal']"
+                position="after"
+            >
+                <field
+                    name='source_pricelist_item_id'
+                    string="Pricelist Item (Source)"
+                    optional="show"
+                />
+                <field
+                    name='source_pricelist_id'
+                    string="Pricelist (Source)"
+                    optional="hide"
+                />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
