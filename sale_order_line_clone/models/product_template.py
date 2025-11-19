@@ -15,7 +15,7 @@ class ProductTemplate(models.Model):
         readonly=False,
     )
 
-    @api.depends("detailed_type")
+    @api.depends("type")
     def _compute_service_sale_line(self):
         for record in self:
-            record.can_clone_sale_line = record.detailed_type != "service"
+            record.can_clone_sale_line = record.type != "service"

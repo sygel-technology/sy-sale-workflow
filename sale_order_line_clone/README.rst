@@ -17,7 +17,7 @@ Sale Order Line Clone
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-sygel--technology%2Fsy--sale--workflow-lightgray.png?logo=github
-    :target: https://github.com/sygel-technology/sy-sale-workflow/tree/15.0/sale_order_line_clone
+    :target: https://github.com/sygel-technology/sy-sale-workflow/tree/18.0/sale_order_line_clone
     :alt: sygel-technology/sy-sale-workflow
 
 |badge1| |badge2| |badge3|
@@ -29,26 +29,25 @@ This module allows you the option to clone sale order lines.
 .. contents::
    :local:
 
-Installation
-============
-
-#. Just install.
-
 Configuration
 =============
 
-#. Go to *Settings > Users and Company > Users* and edit users that can
-    copy sale order lines. Check the "Can Clone Sale Order Line" option in
-    *Extra Rights*.
+To configure this module, you need to:
 
-#. Go to *Sales > Products > Products* and into the sales tab you can
-    find the "Can Clone Sale Order Line" option.
+1. Go to *Settings > Users and Company > Users* and edit users that can
+   copy sale order lines. Check the "Can Clone Sale Order Line" option
+   in *Extra Rights*.
+
+2. Go to *Sales > Products > Products* and into the sales tab you can
+   find the "Can Clone Sale Order Line" option.
 
 Usage
 =====
 
-#. At the end of any sale order line, you can find a de clone button.
-    Press it.
+To use this module, you need to:
+
+-  At the end of any sale order line, you can find a de clone button.
+   Press it.
 
 Bug Tracker
 ===========
@@ -56,7 +55,7 @@ Bug Tracker
 Bugs are tracked on `GitHub Issues <https://github.com/sygel-technology/sy-sale-workflow/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-`feedback <https://github.com/sygel-technology/sy-sale-workflow/issues/new?body=module:%20sale_order_line_clone%0Aversion:%2015.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+`feedback <https://github.com/sygel-technology/sy-sale-workflow/issues/new?body=module:%20sale_order_line_clone%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -66,23 +65,20 @@ Credits
 Authors
 -------
 
-* Sygel, Odoo Community Association (OCA)
+* Sygel
 
 Contributors
 ------------
 
--  Valentín Vinagre <valentin.vinagre@sygel.es>
--  Roger Sans <roger.sans@sygel.es>
+-  `Sygel <https://www.sygel.es>`__:
+
+   -  Roger Sans
+   -  Alberto Martínez
+   -  Valentin Vinagre
 
 Maintainers
 -----------
 
-This module is maintained by Sygel.
-
-.. image:: https://www.sygel.es/logo.png
-   :alt: Sygel
-   :target: https://www.sygel.es
-
-This module is part of the `sygel-technology/sy-sale-workflow <https://github.com/sygel-technology/sy-sale-workflow/tree/15.0/sale_order_line_clone>`_ project on GitHub.
+This module is part of the `sygel-technology/sy-sale-workflow <https://github.com/sygel-technology/sy-sale-workflow/tree/18.0/sale_order_line_clone>`_ project on GitHub.
 
 You are welcome to contribute.

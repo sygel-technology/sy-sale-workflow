@@ -3,8 +3,8 @@
 
 {
     "name": "Sale Order Line Clone",
-    "version": "15.0.1.0.0",
-    "author": "Sygel, Odoo Community Association (OCA)",
+    "version": "18.0.1.0.0",
+    "author": "Sygel",
     "license": "AGPL-3",
     "category": "Sales",
     "summary": "Clone sale order lines.",

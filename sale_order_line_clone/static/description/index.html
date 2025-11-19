@@ -369,68 +369,71 @@ ul.auto-toc {
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! source digest: sha256:d249d5d8b3c312214f35c525cdbacc99f98cdec58b2c81b11e9ccfa247acc698
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-<p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Beta" src="https://img.shields.io/badge/maturity-Beta-yellow.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/agpl-3.0-standalone.html"><img alt="License: AGPL-3" src="https://img.shields.io/badge/licence-AGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/sygel-technology/sy-sale-workflow/tree/15.0/sale_order_line_clone"><img alt="sygel-technology/sy-sale-workflow" src="https://img.shields.io/badge/github-sygel--technology%2Fsy--sale--workflow-lightgray.png?logo=github" /></a></p>
+<p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Beta" src="https://img.shields.io/badge/maturity-Beta-yellow.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/agpl-3.0-standalone.html"><img alt="License: AGPL-3" src="https://img.shields.io/badge/licence-AGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/sygel-technology/sy-sale-workflow/tree/18.0/sale_order_line_clone"><img alt="sygel-technology/sy-sale-workflow" src="https://img.shields.io/badge/github-sygel--technology%2Fsy--sale--workflow-lightgray.png?logo=github" /></a></p>
 <p>This module allows you the option to clone sale order lines.</p>
 <p><strong>Table of contents</strong></p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#installation" id="toc-entry-1">Installation</a></li>
-<li><a class="reference internal" href="#configuration" id="toc-entry-2">Configuration</a></li>
-<li><a class="reference internal" href="#usage" id="toc-entry-3">Usage</a></li>
-<li><a class="reference internal" href="#bug-tracker" id="toc-entry-4">Bug Tracker</a></li>
-<li><a class="reference internal" href="#credits" id="toc-entry-5">Credits</a><ul>
-<li><a class="reference internal" href="#authors" id="toc-entry-6">Authors</a></li>
-<li><a class="reference internal" href="#contributors" id="toc-entry-7">Contributors</a></li>
-<li><a class="reference internal" href="#maintainers" id="toc-entry-8">Maintainers</a></li>
+<li><a class="reference internal" href="#configuration" id="toc-entry-1">Configuration</a></li>
+<li><a class="reference internal" href="#usage" id="toc-entry-2">Usage</a></li>
+<li><a class="reference internal" href="#bug-tracker" id="toc-entry-3">Bug Tracker</a></li>
+<li><a class="reference internal" href="#credits" id="toc-entry-4">Credits</a><ul>
+<li><a class="reference internal" href="#authors" id="toc-entry-5">Authors</a></li>
+<li><a class="reference internal" href="#contributors" id="toc-entry-6">Contributors</a></li>
+<li><a class="reference internal" href="#maintainers" id="toc-entry-7">Maintainers</a></li>
 </ul>
 </li>
 </ul>
 </div>
-<div class="section" id="installation">
-<h1><a class="toc-backref" href="#toc-entry-1">Installation</a></h1>
+<div class="section" id="configuration">
+<h1><a class="toc-backref" href="#toc-entry-1">Configuration</a></h1>
+<p>To configure this module, you need to:</p>
 <ol class="arabic simple">
-<li>Just install.</li>
+<li>Go to <em>Settings &gt; Users and Company &gt; Users</em> and edit users that can
+copy sale order lines. Check the “Can Clone Sale Order Line” option
+in <em>Extra Rights</em>.</li>
+<li>Go to <em>Sales &gt; Products &gt; Products</em> and into the sales tab you can
+find the “Can Clone Sale Order Line” option.</li>
 </ol>
 </div>
-<div class="section" id="configuration">
-<h1><a class="toc-backref" href="#toc-entry-2">Configuration</a></h1>
-<p>#. Go to <em>Settings &gt; Users and Company &gt; Users</em> and edit users that can
-copy sale order lines. Check the “Can Clone Sale Order Line” option in
-<em>Extra Rights</em>.</p>
-<p>#. Go to <em>Sales &gt; Products &gt; Products</em> and into the sales tab you can
-find the “Can Clone Sale Order Line” option.</p>
-</div>
 <div class="section" id="usage">
-<h1><a class="toc-backref" href="#toc-entry-3">Usage</a></h1>
-<p>#. At the end of any sale order line, you can find a de clone button.
-Press it.</p>
+<h1><a class="toc-backref" href="#toc-entry-2">Usage</a></h1>
+<p>To use this module, you need to:</p>
+<ul class="simple">
+<li>At the end of any sale order line, you can find a de clone button.
+Press it.</li>
+</ul>
 </div>
 <div class="section" id="bug-tracker">
-<h1><a class="toc-backref" href="#toc-entry-4">Bug Tracker</a></h1>
+<h1><a class="toc-backref" href="#toc-entry-3">Bug Tracker</a></h1>
 <p>Bugs are tracked on <a class="reference external" href="https://github.com/sygel-technology/sy-sale-workflow/issues">GitHub Issues</a>.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-<a class="reference external" href="https://github.com/sygel-technology/sy-sale-workflow/issues/new?body=module:%20sale_order_line_clone%0Aversion:%2015.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**">feedback</a>.</p>
+<a class="reference external" href="https://github.com/sygel-technology/sy-sale-workflow/issues/new?body=module:%20sale_order_line_clone%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**">feedback</a>.</p>
 <p>Do not contact contributors directly about support or help with technical issues.</p>
 </div>
 <div class="section" id="credits">
-<h1><a class="toc-backref" href="#toc-entry-5">Credits</a></h1>
+<h1><a class="toc-backref" href="#toc-entry-4">Credits</a></h1>
 <div class="section" id="authors">
-<h2><a class="toc-backref" href="#toc-entry-6">Authors</a></h2>
+<h2><a class="toc-backref" href="#toc-entry-5">Authors</a></h2>
 <ul class="simple">
 <li>Sygel</li>
 </ul>
 </div>
 <div class="section" id="contributors">
-<h2><a class="toc-backref" href="#toc-entry-7">Contributors</a></h2>
+<h2><a class="toc-backref" href="#toc-entry-6">Contributors</a></h2>
 <ul class="simple">
-<li>Valentín Vinagre &lt;<a class="reference external" href="mailto:valentin.vinagre&#64;sygel.es">valentin.vinagre&#64;sygel.es</a>&gt;</li>
-<li>Roger Sans &lt;<a class="reference external" href="mailto:roger.sans&#64;sygel.es">roger.sans&#64;sygel.es</a>&gt;</li>
+<li><a class="reference external" href="https://www.sygel.es">Sygel</a>:<ul>
+<li>Roger Sans</li>
+<li>Alberto Martínez</li>
+<li>Valentin Vinagre</li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="section" id="maintainers">
-<h2><a class="toc-backref" href="#toc-entry-8">Maintainers</a></h2>
-<p>This module is part of the <a class="reference external" href="https://github.com/sygel-technology/sy-sale-workflow/tree/15.0/sale_order_line_clone">sygel-technology/sy-sale-workflow</a> project on GitHub.</p>
+<h2><a class="toc-backref" href="#toc-entry-7">Maintainers</a></h2>
+<p>This module is part of the <a class="reference external" href="https://github.com/sygel-technology/sy-sale-workflow/tree/18.0/sale_order_line_clone">sygel-technology/sy-sale-workflow</a> project on GitHub.</p>
 <p>You are welcome to contribute.</p>
 </div>
 </div>
