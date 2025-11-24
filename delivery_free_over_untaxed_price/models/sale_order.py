@@ -12,4 +12,4 @@ class SaleOrder(models.Model):
         delivery_cost_untaxed = sum(
             line.price_subtotal for line in self.order_line if line.is_delivery
         )
-        return float(self.amount_untaxed) - delivery_cost_untaxed
+        return self.amount_untaxed - delivery_cost_untaxed
