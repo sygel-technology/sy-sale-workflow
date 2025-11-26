@@ -2,10 +2,10 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 {
-    "name": "Sale Automatic Workflow Force Invoice",
+    "name": "Sale Automatic Workflow Force Invoiced",
     "summary": "Force Invoice as an automatic workflow option",
-    "version": "15.0.1.0.0",
-    "author": "Sygel",
+    "version": "18.0.1.0.0",
+    "author": "Sygel, Odoo Community Association (OCA)",
     "website": "https://github.com/sygel-technology/sy-sale-workflow",
     "category": "Sales Management",
     "license": "AGPL-3",
