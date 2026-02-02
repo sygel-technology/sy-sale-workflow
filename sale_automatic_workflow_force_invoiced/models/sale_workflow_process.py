@@ -16,7 +16,7 @@ class SaleWorkflowProcess(models.Model):
     force_invoice_order_filter_id = fields.Many2one(
         "ir.filters",
         default=lambda self: self._default_filter(
-            "sale_automatic_workflow_force_invoice.automatic_workflow_force_invoice_filter"
+            "sale_automatic_workflow_force_invoiced.automatic_workflow_force_invoice_filter"
         ),
     )
 
