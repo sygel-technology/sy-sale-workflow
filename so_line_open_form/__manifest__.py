@@ -3,7 +3,7 @@
 
 {
     "name": "Sale Order Line Open Form",
-    "version": "16.0.1.0.0",
+    "version": "18.0.1.0.0",
     "author": "Sygel",
     "license": "AGPL-3",
     "category": "Sale",
