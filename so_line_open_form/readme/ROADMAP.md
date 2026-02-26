@@ -1,0 +1,1 @@
+In some Odoo versions prior to V18, if a list view has too many fields, it opens directly in the form view, even when the editable attribute is set. We weren't able to reproduce this feature in V18. Despite that, we do not recommend worrying about that feature, as this module forces the records to open in form view easily.
