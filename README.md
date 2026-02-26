@@ -16,6 +16,13 @@ Odoo Sales, Workflow and Organization
 <!-- prettier-ignore-start -->
 
 [//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[so_line_open_form](so_line_open_form/) | 18.0.1.0.0 |  | Open form view when click on sale order line.
+
 [//]: # (end addons)
 
 <!-- prettier-ignore-end -->
