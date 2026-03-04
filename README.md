@@ -21,6 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[sale_order_line_clone](sale_order_line_clone/) | 18.0.1.0.0 |  | Clone sale order lines.
 [so_line_open_form](so_line_open_form/) | 18.0.1.0.0 |  | Open form view when click on sale order line.
 
 [//]: # (end addons)
