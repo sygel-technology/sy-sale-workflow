@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="product_template_form_inherit_clone_line">
+        <field name="name">product.template.form.inherit.clone.line</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='upsell']" position="inside">
+                <field name="can_clone_sale_line" />
+            </xpath>
+        </field>
+    </record>
+</odoo>
