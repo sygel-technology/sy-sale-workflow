@@ -4,6 +4,6 @@
 <odoo noupdate="1">
     <record id="sale_order_line_display_number" model="ir.config_parameter">
         <field name="key">sale_order_line_display_number.number</field>
-        <field name="value">0</field>
+        <field name="value">10000</field>
     </record>
 </odoo>
