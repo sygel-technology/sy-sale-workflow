@@ -82,7 +82,7 @@ msgstr "Regla de requerimiento de ventas"
 #. module: sale_type_confirmation_requirement_rules
 #: model:ir.actions.act_window,name:sale_type_confirmation_requirement_rules.sale_order_requirement_rule_action
 #: model_terms:ir.ui.view,arch_db:sale_type_confirmation_requirement_rules.sale_order_requirement_rule_form_view
-#: model_terms:ir.ui.view,arch_db:sale_type_confirmation_requirement_rules.sale_order_requirement_rule_tree_view
+#: model_terms:ir.ui.view,arch_db:sale_type_confirmation_requirement_rules.sale_order_requirement_rule_list_view
 msgid "Sale Order Requirement Rule"
 msgstr "Regla de requerimiento de ventas"
 

@@ -24,7 +24,7 @@ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
                 <notebook>
                     <page
                         string="Requirement Rules"
-                        attrs="{'invisible': [('use_requirement_rules', '=', False)]}"
+                        invisible="not use_requirement_rules"
                     >
                         <field
                             name="requirement_rule_ids"

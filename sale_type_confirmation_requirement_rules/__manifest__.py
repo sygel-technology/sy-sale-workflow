@@ -3,7 +3,7 @@
 
 {
     "name": "Sale Type Confirmation Requirement Rules",
-    "version": "15.0.1.0.1",
+    "version": "18.0.1.0.0",
     "summary": "Required domain conditions when validating a Sale Order.",
     "website": "https://github.com/sygel-technology/sy-sale-workflow",
     "author": "Sygel",
