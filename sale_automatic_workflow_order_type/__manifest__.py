@@ -7,7 +7,7 @@
     "version": "17.0.1.0.0",
     "category": "Sales Management",
     "website": "https://github.com/sygel-technology/sy-sale-workflow",
-    "author": "Sygel, Odoo Community Association (OCA)",
+    "author": "Sygel",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
