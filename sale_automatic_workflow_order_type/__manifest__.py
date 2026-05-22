@@ -4,7 +4,7 @@
 {
     "name": "Sale Automatic Workflow Order Type",
     "summary": "Sale Automatic Workflow Order Type",
-    "version": "17.0.1.0.0",
+    "version": "18.0.1.0.0",
     "category": "Sales Management",
     "website": "https://github.com/sygel-technology/sy-sale-workflow",
     "author": "Sygel",
