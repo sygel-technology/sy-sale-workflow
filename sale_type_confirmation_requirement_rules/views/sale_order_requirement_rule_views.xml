@@ -2,13 +2,12 @@
 <!-- Copyright 2024 Manuel Regidor <manuel.regidor@sygel.es>
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
-
     <record id="sale_order_requirement_rule_form_view" model="ir.ui.view">
         <field name="name">sale.order.requirement.rule.form.view</field>
         <field name="model">sale.order.requirement.rule</field>
         <field name="arch" type="xml">
             <form string="Sale Order Requirement Rule">
-                 <sheet>
+                <sheet>
                     <div class="oe_title">
                         <label for="name" class="oe_edit_only" />
                         <h1>
@@ -54,5 +53,4 @@
         action="sale_order_requirement_rule_action"
         sequence="99"
     />
-
 </odoo>
