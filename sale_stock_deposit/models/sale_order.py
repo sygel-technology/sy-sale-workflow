@@ -12,8 +12,10 @@ class SaleOrder(models.Model):
         """
         The lines with different routes from the default ones are searched and checked:
             * If they are deposit lines
-            * If the customer has a warehouse location created.
+            * If the customer has a deposit location created.
+            * If the deposit location has enough stock (in deposit deliveries)
             * If the warehouses configured between routes and sales are the same.
+        If the configuration of those lines is not correct, an error is raised.
         """
         for line in self.mapped("order_line").filtered(
             lambda x: x.route_id.id != x.warehouse_id.delivery_route_id.id
@@ -31,8 +33,8 @@ class SaleOrder(models.Model):
                 if not locations:
                     raise UserError(
                         _(
-                            f"The partner '{line.order_partner_id.display_name}' does not have "
-                            "a deposit location configured!"
+                            f"The partner '{line.order_partner_id.display_name}' "
+                            "does not have a deposit location configured!"
                         )
                     )
                 if line.route_id.deposit_operation_type == "delivery_deposit":

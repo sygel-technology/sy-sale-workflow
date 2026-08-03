@@ -4,10 +4,7 @@
 from . import models
 from . import wizards
 
-from odoo import api, SUPERUSER_ID
 
-
-def _post_init_sale_stock_deposit(cr, registry):
-    env = api.Environment(cr, SUPERUSER_ID, {})
+def _post_init_sale_stock_deposit(env):
     warehouses = env["stock.warehouse"].search([])
     env["stock.warehouse"]._create_deposits(warehouses)

@@ -44,7 +44,8 @@ class TestSaleStockDeposit(TransactionCase):
         cls.product = cls.env["product.product"].create(
             {
                 "name": "Test-Product",
-                "detailed_type": "product",
+                "type": "consu",
+                "is_storable": True,
                 "description_pickingout": "description_pickingout",
             }
         )
@@ -94,7 +95,7 @@ class TestSaleStockDeposit(TransactionCase):
         picking = order.picking_ids[0]
         move = picking.move_ids[0]
         self.assertEqual(move.description_picking, self.product.description_pickingout)
-        move.write({"quantity_done": 10})
+        move.write({"quantity": 10})
         picking.button_validate()
         self.assertEqual(self.partner.deposit_count, 1)
         deposits = self.env["stock.quant"].search(
@@ -109,15 +110,15 @@ class TestSaleStockDeposit(TransactionCase):
         self.assertEqual(deposit.quantity, -10)
         self.assertEqual(deposit.company_id, self.company)
 
-        # Create and validate delivery stock deposit
+        # Create and validate deposit delivery
         order = self.create_deposit_sale("delivery_deposit")
         order.action_confirm()
         picking = order.picking_ids[0]
         move = picking.move_ids[0]
         self.assertEqual(move.description_picking, self.product.description_pickingout)
-        picking.move_ids[0].write({"quantity_done": 10})
+        picking.move_ids[0].write({"quantity": 10})
 
-        # Validate delivery stock deposit picking
+        # Validate deposit delivery picking
         picking.button_validate()
         self.assertEqual(self.partner.deposit_count, 1)
         deposits = self.env["stock.quant"].search(
@@ -153,9 +154,9 @@ class TestSaleStockDeposit(TransactionCase):
         picking = order.picking_ids[0]
         move = picking.move_ids[0]
         self.assertEqual(move.description_picking, self.product.description_pickingout)
-        move.write({"quantity_done": 10})
+        move.write({"quantity": 10})
         picking.button_validate()
-        # Create and validate delivery stock deposit
+        # Create and validate deposit delivery
         order = self.create_deposit_sale("delivery_deposit", 11)
         with self.assertRaises(UserError):
             order.action_confirm()
@@ -172,8 +173,8 @@ class TestSaleStockDeposit(TransactionCase):
             ],
             limit=1,
         )
-        order.order_line[0].write({"route_id": route.id})
         with self.assertRaises(UserError):
+            order.order_line[0].write({"route_id": route.id})
             order.action_confirm()
 
     def test_deposit_already_exists(self):

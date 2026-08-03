@@ -29,7 +29,7 @@
                         />
                     </div>
                     <field name="deposit_ids" nolabel="1">
-                        <tree create="false">
+                        <list create="false">
                             <field name="warehouse_id" />
                             <field name="location_id" />
                             <field name="name" string="Deposit Name" />
@@ -40,7 +40,7 @@
                                 string="View Deposit State"
                                 class="oe_highlight"
                             />
-                        </tree>
+                        </list>
                     </field>
                 </page>
             </xpath>

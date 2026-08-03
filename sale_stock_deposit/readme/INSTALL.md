@@ -1,0 +1,1 @@
+Note: Once installed the module will create the warehouses, types of operations, routes and rules for each warehouse available. This will also be done automatically for each warehouse you create after the installation.

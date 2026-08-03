@@ -9,6 +9,7 @@ class StockPicking(models.Model):
     _inherit = "stock.picking"
 
     def button_validate(self):
+        # Raise an error if the stock is not correct in a delivery_deposit operation
         for picking in self.filtered(lambda x: x.picking_type_code == "outgoing"):
             locations = picking.location_dest_id
             for move in picking.move_ids.filtered(
@@ -18,11 +19,11 @@ class StockPicking(models.Model):
                 qty_available = move.product_id.with_context(
                     location=locations.id
                 ).qty_available
-                if qty_available + move.quantity_done > 0:
+                if qty_available + move.quantity > 0:
                     raise UserError(
                         _(
-                            "This client in your location does not have enough "
-                            f"stock. The stock virtual in the location is {abs(qty_available)}"
+                            "This client in your location does not have enough stock. "
+                            f"The stock virtual in the location is {abs(qty_available)}"
                         )
                     )
         return super().button_validate()

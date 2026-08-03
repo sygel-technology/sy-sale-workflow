@@ -21,21 +21,19 @@ class Warehouse(models.Model):
     def _get_vals_deposit_operation_type(
         self, warehouse, return_picking_id=False, deposit=False
     ):
-        name = _("({}) Deposit Sale").format(warehouse.name)
+        name = _("Deposit Sale")
         code = "incoming"
-        sequence_code = f"{warehouse.code}/DEP_SALE/"
+        sequence_code = f"{warehouse.code}/DEP_SALE"
         print_label = False
         show_operations = False
-        show_reserved = True
         default_location_src_id = self.env.ref("stock.stock_location_suppliers").id
         default_location_dest_id = warehouse.lot_stock_id.id
         if return_picking_id and deposit:
-            name = _("({}) Delivery Stock Deposit").format(warehouse.name)
+            name = _("Deposit Delivery")
             code = "outgoing"
-            sequence_code = f"{warehouse.code}/DEL_DEP/"
+            sequence_code = f"{warehouse.code}/DEL_DEP"
             print_label = True
             show_operations = True
-            show_reserved = False
             default_location_src_id = deposit
             default_location_dest_id = self.env.ref("stock.stock_location_customers").id
         return [
@@ -50,7 +48,6 @@ class Warehouse(models.Model):
                 "return_picking_type_id": return_picking_id,
                 "create_backorder": "ask",
                 "show_operations": show_operations,
-                "show_reserved": show_reserved,
                 "use_create_lots": False,
                 "use_existing_lots": True,
                 "default_location_src_id": default_location_src_id,
@@ -60,9 +57,9 @@ class Warehouse(models.Model):
         ]
 
     def _get_vals_deposit_route(self, warehouse, deposit_operation_type):
-        name = _("({}) / Deposit Sell").format(warehouse.name)
+        name = _("{}: Deposit Sale").format(warehouse.name)
         if deposit_operation_type == "delivery_deposit":
-            name = _("({}) / Delivery Stock Deposit").format(warehouse.name)
+            name = _("{}: Deposit Delivery").format(warehouse.name)
         return [
             {
                 "name": name,
@@ -78,11 +75,11 @@ class Warehouse(models.Model):
         ]
 
     def _get_vals_deposit_rule(self, warehouse, route, deposit, operation_type_id):
-        name = _("{}/ Deposit -> Customer").format(warehouse.code)
+        name = _("{}: Deposit -> Customer").format(warehouse.code)
         location_src_id = deposit
         location_dest_id = self.env.ref("stock.stock_location_customers")
         if route.deposit_operation_type == "delivery_deposit":
-            name = _("{}/ Stock -> Deposit").format(warehouse.code)
+            name = _("{}: Stock -> Deposit").format(warehouse.code)
             location_src_id = warehouse.lot_stock_id
             location_dest_id = deposit
         return [

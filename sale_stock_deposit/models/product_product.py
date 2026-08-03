@@ -8,6 +8,9 @@ class ProductProduct(models.Model):
     _inherit = "product.product"
 
     def _get_description(self, picking_type_id):
+        # As out deposit pick types does not have the correct usage,
+        # the descripton retirned with those types are not correct
+        # We need to fix those pick types
         description = super()._get_description(picking_type_id)
         if picking_type_id.code == "incoming":
             routes = (

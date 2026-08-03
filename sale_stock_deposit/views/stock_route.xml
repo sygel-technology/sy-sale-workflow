@@ -12,11 +12,13 @@
                     <field name="deposit_operation" />
                     <field
                         name="deposit_operation_type"
-                        attrs="{'invisible':[('deposit_operation','=',False)], 'required': [('deposit_operation', '=', True)]}"
+                        invisible="not deposit_operation"
+                        required="deposit_operation"
                     />
                     <field
                         name="warehouse_id"
-                        attrs="{'invisible':[('deposit_operation','=',False)], 'required': [('deposit_operation', '=', True)]}"
+                        invisible="not deposit_operation"
+                        required="deposit_operation"
                     />
                 </group>
             </xpath>

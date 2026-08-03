@@ -14,8 +14,8 @@ class StockRoute(models.Model):
     )
     deposit_operation_type = fields.Selection(
         selection=[
-            ("deposit", "Deposit Sell"),
-            ("delivery_deposit", "Delivery Stock Deposit"),
+            ("deposit", "Deposit Sale"),
+            ("delivery_deposit", "Deposit Delivery"),
         ],
         default="deposit",
     )

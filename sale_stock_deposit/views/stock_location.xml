@@ -11,7 +11,8 @@
                 <field name="deposit_location" />
                 <field
                     name="partner_id"
-                    attrs="{'invisible':['|', ('deposit_location','=',False), ('usage','=', 'view')], 'required': [('deposit_location', '=', True), ('usage', '=', 'internal')]}"
+                    invisible="not deposit_location or usage == 'view'"
+                    required="deposit_location and usage == 'internal'"
                 />
             </xpath>
         </field>
