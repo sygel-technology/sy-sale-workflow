@@ -31,10 +31,8 @@ class SaleOrder(models.Model):
                 if not locations:
                     raise UserError(
                         _(
-                            "The partner '{}' does not have "
-                            "a deposit location configured!".format(
-                                line.order_partner_id.display_name
-                            )
+                            f"The partner '{line.order_partner_id.display_name}' does not have "
+                            "a deposit location configured!"
                         )
                     )
                 if line.route_id.deposit_operation_type == "delivery_deposit":

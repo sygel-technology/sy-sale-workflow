@@ -22,9 +22,7 @@ class StockPicking(models.Model):
                     raise UserError(
                         _(
                             "This client in your location does not have enough "
-                            "stock. The stock virtual in the location is {}".format(
-                                abs(qty_available)
-                            )
+                            f"stock. The stock virtual in the location is {abs(qty_available)}"
                         )
                     )
         return super().button_validate()

@@ -37,13 +37,9 @@ class StockRule(models.Model):
         #     origin                  dest(location_dest_id)
         #     WH/Stock                WH/deposit(dinamic)
 
-        if (
-            self.route_id.deposit_operation
-            and self.route_id.deposit_operation_type
-            in (
-                "deposit",
-                "delivery_deposit",
-            )
+        if self.route_id.deposit_operation and self.route_id.deposit_operation_type in (
+            "deposit",
+            "delivery_deposit",
         ):
             partner_id = self.env["res.partner"].browse(values.get("partner_id", False))
             domain = [

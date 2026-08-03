@@ -85,7 +85,6 @@ class TestSaleStockDeposit(TransactionCase):
         self.assertEqual(len(self.partner.deposit_ids), 2)
 
     def test_deposit_sale(self):
-
         # Create and validate deposit sale
         self.create_deposit(self.partner, self.main_deposit_location)
         order = self.create_deposit_sale("deposit")
