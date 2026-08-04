@@ -1,12 +1,9 @@
-# Copyright <YEAR(S)> <AUTHOR(S)>
+# Copyright Alberto Martínez <alberto.martinez@sygel.es>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import SUPERUSER_ID, api
 
-
-def post_init_hook(cr, registry):
+def post_init_hook(env):
     """Set margin to 0 in old Delivery Stock Deposit Sale Order Lines"""
-    env = api.Environment(cr, SUPERUSER_ID, {})
     routes = env["stock.route"].search(
         [
             ("deposit_operation", "=", True),

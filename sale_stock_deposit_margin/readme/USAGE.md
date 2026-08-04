@@ -14,7 +14,10 @@
 - Choose a product that the customer currently has in deposit, which was previously added through a **sale using the ‘Sale to Deposit’ route**.
 
 #### 5. Set the Correct Route
-- Select the **Route**: `(<warehouse_name>) / Delivery Stock Deposit`.
+- Select the **Route**: `(<warehouse_name>) / Deposit Delivery`.
 
 #### 6. Review the Margin Calculation
 - You will see that the **‘Margin’** and **‘Margin (%)’** fields in the line are automatically computed as **0**.
+
+
+Note: The negative margins are not displayed by default. If you remove the Deposit Delivery route, the margin will be set again, but you'll also have to set again the unit price of the product, which is automatically set to 0 when you select the Deposit Delivery route.
