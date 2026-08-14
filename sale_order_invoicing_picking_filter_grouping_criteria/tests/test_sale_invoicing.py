@@ -4,7 +4,7 @@
 from odoo.tests.common import TransactionCase
 
 
-class TestSaleInvoiging(TransactionCase):
+class TestSaleInvoicing(TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
@@ -37,7 +37,11 @@ class TestSaleInvoiging(TransactionCase):
             }
         )
         cls.product = cls.env["product.product"].create(
-            {"name": "Test product", "type": "product"}
+            {
+                "name": "Test product",
+                "type": "consu",
+                "is_storable": True,
+            }
         )
         cls.GroupingCriteria = cls.env["sale.invoicing.grouping.criteria"]
         cls.grouping_criteria = cls.GroupingCriteria.create(
@@ -75,7 +79,7 @@ class TestSaleInvoiging(TransactionCase):
         cls.order2.action_confirm()
 
         for picking in (cls.order + cls.order2).picking_ids:
-            picking.move_ids.write({"quantity_done": 1})
+            picking.move_ids.write({"quantity": 1})
             picking._action_done()
 
     def create_invoicing_wizard(
@@ -111,3 +115,26 @@ class TestSaleInvoiging(TransactionCase):
         invoice_ids = wizard._create_invoices(orders)
         self.assertEqual(len(invoice_ids), 2)
         self.assertNotEqual(self.order.invoice_ids, self.order2.invoice_ids)
+
+    def test_invoicing_without_picking_filter(self):
+        self.partner.sale_invoicing_grouping_criteria_id = self.grouping_criteria
+        orders = self.order + self.order2
+        wizard = self.create_invoicing_wizard(
+            orders.mapped("id"),
+            [],
+        )
+        invoice_ids = wizard._create_invoices(orders)
+        self.assertEqual(len(invoice_ids), 2)
+        self.assertNotEqual(self.order.invoice_ids, self.order2.invoice_ids)
+
+    def test_invoicing_picking_filtering_same_group(self):
+        self.partner.sale_invoicing_grouping_criteria_id = self.grouping_criteria
+        self.order2.partner_shipping_id = self.partner_delivery1
+        orders = self.order + self.order2
+        wizard = self.create_invoicing_wizard(
+            orders.mapped("id"),
+            orders.mapped("picking_ids.id"),
+        )
+        invoice_ids = wizard._create_invoices(orders)
+        self.assertEqual(len(invoice_ids), 1)
+        self.assertEqual(self.order.invoice_ids, self.order2.invoice_ids)

@@ -9,19 +9,19 @@ class SaleAdvancePaymentInv(models.TransientModel):
 
     def _create_invoices(self, sale_orders):
         """Slice the batch according grouping criteria if using
-        sale_order_invoicing_picking_filter's custom invoice creation
+        sale_order_invoicing_picking_filter's custom invoice creation.
         """
-        if not (self.advance_payment_method == "delivered" and self.stock_picking_ids):
-            return super()._create_invoices(sale_orders)
-
-        order_groups = {}
-        for order in self.sale_order_ids:
-            group_key = order._get_sale_invoicing_group_key()
-            if group_key not in order_groups:
-                order_groups[group_key] = order
-            else:
-                order_groups[group_key] += order
-        moves = self.env["account.move"]
-        for group in order_groups.values():
-            moves += super()._create_invoices(group)
+        if self.advance_payment_method == "delivered" and self.stock_picking_ids:
+            order_groups = {}
+            for order in self.sale_order_ids:
+                group_key = order._get_sale_invoicing_group_key()
+                if group_key not in order_groups:
+                    order_groups[group_key] = order
+                else:
+                    order_groups[group_key] += order
+            moves = self.env["account.move"]
+            for group in order_groups.values():
+                moves += super()._create_invoices(group)
+        else:
+            moves = super()._create_invoices(sale_orders)
         return moves
