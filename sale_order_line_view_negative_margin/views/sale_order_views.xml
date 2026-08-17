@@ -12,10 +12,10 @@
             <xpath expr="//field[@name='order_line']//form" position="inside">
                 <field name="negative_margin" invisible="1" />
             </xpath>
-            <xpath expr="//field[@name='order_line']//tree" position="inside">
-                <field name="negative_margin" invisible="1" />
+            <xpath expr="//field[@name='order_line']//list" position="inside">
+                <field name="negative_margin" column_invisible="1" />
             </xpath>
-            <xpath expr="//field[@name='order_line']//tree" position="attributes">
+            <xpath expr="//field[@name='order_line']//list" position="attributes">
                 <attribute name="decoration-danger">negative_margin == True</attribute>
             </xpath>
         </field>
