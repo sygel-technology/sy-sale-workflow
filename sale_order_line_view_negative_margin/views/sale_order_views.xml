@@ -1,5 +1,5 @@
 <odoo>
-<!-- Copyright 2024 Manuel Regidor <manuel.regidor@sygel.es>
+    <!-- Copyright 2024 Manuel Regidor <manuel.regidor@sygel.es>
  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
     <record
         id="sale_order_line_view_negative_margin_view_order_form"
