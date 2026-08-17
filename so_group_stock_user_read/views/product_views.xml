@@ -19,4 +19,25 @@
             </xpath>
         </field>
     </record>
+    <record id="so_group_stock_user_read_product_template_tree_view" model="ir.ui.view">
+        <field name="name">
+            so.group.stock.user.read.product.template.tree
+        </field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_tree_view" />
+        <field name="arch" type="xml">
+            <field name="list_price" position="after">
+                <field
+                    name="qty_available"
+                    optional="hide"
+                    groups="stock.group_stock_user,so_group_stock_user_read.group_stock_user_read"
+                />
+                <field
+                    name="virtual_available"
+                    optional="hide"
+                    groups="stock.group_stock_user,so_group_stock_user_read.group_stock_user_read"
+                />
+            </field>
+        </field>
+    </record>
 </odoo>

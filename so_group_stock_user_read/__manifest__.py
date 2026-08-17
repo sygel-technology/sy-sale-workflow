@@ -4,10 +4,10 @@
 {
     "name": "SO Group Stock User Read",
     "summary": "Sale Order Group Stock User Read",
-    "version": "16.0.1.0.1",
+    "version": "18.0.1.0.0",
     "category": "Sale",
     "website": "https://github.com/sygel-technology/sy-sale-workflow",
-    "author": "Sygel, Odoo Community Association (OCA)",
+    "author": "Sygel",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
