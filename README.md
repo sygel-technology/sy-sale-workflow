@@ -24,6 +24,7 @@ addon | version | maintainers | summary
 [sale_automatic_workflow_order_type](sale_automatic_workflow_order_type/) | 18.0.1.0.0 |  | Sale Automatic Workflow Order Type
 [sale_order_line_clone](sale_order_line_clone/) | 18.0.1.0.0 |  | Clone sale order lines.
 [sale_order_line_display_number](sale_order_line_display_number/) | 18.0.1.0.0 |  | Configure the number of sale order lines to be shown
+[sale_order_line_view_negative_margin](sale_order_line_view_negative_margin/) | 18.0.1.0.0 |  | Sale Order Line turns red if margin is negative or 0
 [sale_type_confirmation_requirement_rules](sale_type_confirmation_requirement_rules/) | 18.0.1.0.0 |  | Required domain conditions when validating a Sale Order.
 [so_line_description_without_internal_ref](so_line_description_without_internal_ref/) | 18.0.1.0.0 |  | SO Line Description Without Internal Reference
 [so_line_open_form](so_line_open_form/) | 18.0.1.0.0 |  | Open form view when click on sale order line.
