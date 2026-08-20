@@ -1,0 +1,1 @@
+This module extends the functionality of sale_order_invoicing_grouping_criteria and sale_order_invoicing_picking_filter, to support both the functionality of selecting the pickings that will be invoiced, and grouping the generated invoices, when invoicing multiple sales at the same time.
