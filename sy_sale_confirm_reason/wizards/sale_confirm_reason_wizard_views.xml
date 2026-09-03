@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2026 Ángel Rivas <angel.rivas@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="view_sale_confirm_reason_wizard_form" model="ir.ui.view">
+        <field name="name">sale.confirm.reason.wizard.form</field>
+        <field name="model">sale.confirm.reason.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Confirmation Reason">
+                <group>
+                    <field name="order_id" invisible="1" />
+                    <field name="allow_manual_text" invisible="1" />
+                    <field name="manual_text_required" invisible="1" />
+
+                    <field
+                        name="reason_id"
+                        options="{'no_create': True, 'no_open': True}"
+                    />
+                    <field
+                        name="details"
+                        invisible="not allow_manual_text"
+                        required="manual_text_required"
+                    />
+                </group>
+                <footer>
+                    <button
+                        name="action_confirm"
+                        string="Confirm"
+                        type="object"
+                        class="btn-primary"
+                    />
+                    <button string="Cancel" special="cancel" class="btn-secondary" />
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>
