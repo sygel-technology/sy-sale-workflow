@@ -1,0 +1,152 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sy_sale_confirm_reason
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-03 09:42+0000\n"
+"PO-Revision-Date: 2026-09-03 11:46+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.9\n"
+
+#. module: sy_sale_confirm_reason
+#. odoo-python
+#: code:addons/sy_sale_confirm_reason/models/sale_confirm_reason.py:0
+msgid "%s (copy)"
+msgstr "%s (Copia)"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__details
+msgid "Additional Information"
+msgstr "Información adicional"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason__allow_manual_text
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__allow_manual_text
+msgid "Allow Manual Text"
+msgstr "Permitir detalles"
+
+#. module: sy_sale_confirm_reason
+#: model_terms:ir.ui.view,arch_db:sy_sale_confirm_reason.view_sale_confirm_reason_wizard_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: sy_sale_confirm_reason
+#: model_terms:ir.ui.view,arch_db:sy_sale_confirm_reason.view_sale_confirm_reason_wizard_form
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_order__confirm_reason_id
+msgid "Confirmation"
+msgstr "Confirmación"
+
+#. module: sy_sale_confirm_reason
+#. odoo-python
+#: code:addons/sy_sale_confirm_reason/models/sale_order.py:0
+#: model_terms:ir.ui.view,arch_db:sy_sale_confirm_reason.view_sale_confirm_reason_wizard_form
+msgid "Confirmation Reason"
+msgstr "Razón de confirmación"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.ui.menu,name:sy_sale_confirm_reason.menu_sale_confirm_reason
+msgid "Confirmation Reasons"
+msgstr "Razones de confirmación"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason__create_uid
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason__create_date
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_order__confirm_reason_details
+msgid "Details"
+msgstr "Detalles"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason__display_name
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__display_name
+msgid "Display Name"
+msgstr "Mostrar nombre"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason__id
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason__write_uid
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Ultima actualización por"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason__write_date
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason__manual_text_required
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__manual_text_required
+msgid "Manual Text Required"
+msgstr "Detalles obligatiorios"
+
+#. module: sy_sale_confirm_reason
+#. odoo-python
+#: code:addons/sy_sale_confirm_reason/models/sale_confirm_reason.py:0
+msgid "No additional information is required."
+msgstr "No requiere información adicional"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__order_id
+msgid "Order"
+msgstr "Pedido de venta"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason__name
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__reason_id
+msgid "Reason"
+msgstr "Motivo"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model,name:sy_sale_confirm_reason.model_sale_confirm_reason
+#: model_terms:ir.ui.view,arch_db:sy_sale_confirm_reason.view_sale_confirm_reason_form
+msgid "Sale Confirmation Reason"
+msgstr "Razón de confirmación"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model,name:sy_sale_confirm_reason.model_sale_confirm_reason_wizard
+msgid "Sale Confirmation Reason Wizard"
+msgstr "Razón de confirmación"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.actions.act_window,name:sy_sale_confirm_reason.action_sale_confirm_reason
+msgid "Sale Confirmation Reasons"
+msgstr "Razones de confirmación"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model,name:sy_sale_confirm_reason.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.constraint,message:sy_sale_confirm_reason.constraint_sale_confirm_reason_name_uniq
+msgid "The confirmation reason must be unique."
+msgstr "El nombre de la razón de confirmación debe ser único."
