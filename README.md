@@ -22,6 +22,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [sale_automatic_workflow_order_type](sale_automatic_workflow_order_type/) | 18.0.1.0.0 |  | Sale Automatic Workflow Order Type
+[sale_disable_cancel_warning](sale_disable_cancel_warning/) | 18.0.1.0.0 |  | Adds an option to disable the sale cancel warning wizard
 [sale_order_invoicing_picking_filter_grouping_criteria](sale_order_invoicing_picking_filter_grouping_criteria/) | 18.0.1.0.0 | <a href='https://github.com/tisho99'><img src='https://github.com/tisho99.png' width='32' height='32' style='border-radius:50%;' alt='tisho99'/></a> | Glues the picking filter with sale_order_invoicing_grouping_criteria
 [sale_order_line_clone](sale_order_line_clone/) | 18.0.1.0.0 |  | Clone sale order lines.
 [sale_order_line_display_number](sale_order_line_display_number/) | 18.0.1.0.0 |  | Configure the number of sale order lines to be shown

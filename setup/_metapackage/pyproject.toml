@@ -1,8 +1,9 @@
 [project]
 name = "odoo-addons-sygel-technology-sy-sale-workflow"
-version = "18.0.20260820.1"
+version = "18.0.20260903.0"
 dependencies = [
     "odoo-addon-sale_automatic_workflow_order_type==18.0.*",
+    "odoo-addon-sale_disable_cancel_warning==18.0.*",
     "odoo-addon-sale_order_invoicing_picking_filter_grouping_criteria==18.0.*",
     "odoo-addon-sale_order_line_clone==18.0.*",
     "odoo-addon-sale_order_line_display_number==18.0.*",
