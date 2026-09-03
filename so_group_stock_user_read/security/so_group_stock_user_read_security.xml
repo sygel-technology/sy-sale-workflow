@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="group_stock_user_read" model="res.groups">
+        <field
+            name="name"
+        >Allows you to view the Delivery button from the sale and see the stock quantity</field>
+        <field name="category_id" ref="base.module_category_sales_sales" />
+        <field name="implied_ids" eval="[(4, ref('sales_team.group_sale_salesman'))]" />
+        <field
+            name="comment"
+        >Allows you to go from sales to stock picking and see the products stock quantity.</field>
+    </record>
+</odoo>

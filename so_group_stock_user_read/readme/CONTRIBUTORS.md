@@ -1,0 +1,4 @@
+- [Sygel](https://www.sygel.es):
+  - Ángel García de la Chica Herrera
+  - Valentin Vinagre
+  - Harald Panten

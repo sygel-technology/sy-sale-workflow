@@ -1,0 +1,1 @@
+This module creates a new permission group that allows you to go from sales to stock picking and see the 'Forecasted Quantity' and the 'Quantity on Hand' of the stock of the products from the tree view.
