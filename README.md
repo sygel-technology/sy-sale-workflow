@@ -28,6 +28,7 @@ addon | version | maintainers | summary
 [sale_order_line_display_number](sale_order_line_display_number/) | 18.0.1.0.0 |  | Configure the number of sale order lines to be shown
 [sale_order_line_view_negative_margin](sale_order_line_view_negative_margin/) | 18.0.1.0.0 |  | Sale Order Line turns red if margin is negative or 0
 [sale_stock_deposit](sale_stock_deposit/) | 18.0.1.0.0 |  | Sale Stock deposit
+[sale_stock_deposit_margin](sale_stock_deposit_margin/) | 18.0.1.0.0 |  | Automatically set the margin of Delivery Deposit Sale Lines to 0.
 [sale_type_confirmation_requirement_rules](sale_type_confirmation_requirement_rules/) | 18.0.1.0.0 |  | Required domain conditions when validating a Sale Order.
 [so_group_stock_user_read](so_group_stock_user_read/) | 18.0.1.0.0 |  | Sale Order Group Stock User Read
 [so_line_description_without_internal_ref](so_line_description_without_internal_ref/) | 18.0.1.0.0 |  | SO Line Description Without Internal Reference
