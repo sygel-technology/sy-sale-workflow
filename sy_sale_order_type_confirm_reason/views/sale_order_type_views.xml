@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2026 Ángel Rivas <angel.rivas@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="sale_order_type_form_view_confirm_reason" model="ir.ui.view">
+        <field name="name">sale.order.type.form.confirm.reason</field>
+        <field name="model">sale.order.type</field>
+        <field name="inherit_id" ref="sale_order_type.sot_sale_order_type_form_view" />
+        <field name="arch" type="xml">
+            <field name="sequence_id" position="after">
+                <field name="require_confirm_reason" widget="boolean_toggle" />
+            </field>
+        </field>
+    </record>
+</odoo>
