@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2026 Ángel Rivas <angel.rivas@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="view_order_form_mandate_position" model="ir.ui.view">
+        <field name="name">sale.order.form.mandate.position</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="account_banking_mandate_sale.view_order_form" />
+        <field name="arch" type="xml">
+            <field name="mandate_id" position="attributes">
+                <attribute name="invisible">True</attribute>
+            </field>
+
+            <field name="payment_mode_id" position="after">
+                <field name="mandate_id" invisible="not mandate_required" />
+            </field>
+        </field>
+    </record>
+</odoo>
