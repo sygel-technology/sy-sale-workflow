@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2026 Ángel Rivas <angel.rivas@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="view_sale_confirm_reason_list" model="ir.ui.view">
+        <field name="name">sale.confirm.reason.list</field>
+        <field name="model">sale.confirm.reason</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name" />
+                <field name="allow_manual_text" />
+                <field name="manual_text_required" />
+            </list>
+        </field>
+    </record>
+
+    <record id="view_sale_confirm_reason_form" model="ir.ui.view">
+        <field name="name">sale.confirm.reason.form</field>
+        <field name="model">sale.confirm.reason</field>
+        <field name="arch" type="xml">
+            <form string="Sale Confirmation Reason">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="allow_manual_text" />
+                        <field name="manual_text_required" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_sale_confirm_reason" model="ir.actions.act_window">
+        <field name="name">Sale Confirmation Reasons</field>
+        <field name="res_model">sale.confirm.reason</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem
+        id="menu_sale_confirm_reason"
+        name="Confirmation Reasons"
+        parent="sale.menu_sales_config"
+        action="action_sale_confirm_reason"
+        sequence="20"
+        groups="sales_team.group_sale_manager"
+    />
+</odoo>
