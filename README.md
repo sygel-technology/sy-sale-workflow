@@ -33,6 +33,7 @@ addon | version | maintainers | summary
 [so_group_stock_user_read](so_group_stock_user_read/) | 18.0.1.0.0 |  | Sale Order Group Stock User Read
 [so_line_description_without_internal_ref](so_line_description_without_internal_ref/) | 18.0.1.0.0 |  | SO Line Description Without Internal Reference
 [so_line_open_form](so_line_open_form/) | 18.0.1.0.0 |  | Open form view when click on sale order line.
+[sy_sale_order_mandate_position](sy_sale_order_mandate_position/) | 18.0.1.0.0 |  | Moves the direct debit mandate next to the payment mode on sale orders
 
 [//]: # (end addons)
 
