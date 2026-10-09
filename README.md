@@ -35,6 +35,7 @@ addon | version | maintainers | summary
 [so_line_open_form](so_line_open_form/) | 18.0.1.0.0 |  | Open form view when click on sale order line.
 [sy_sale_confirm_reason](sy_sale_confirm_reason/) | 18.0.1.0.0 |  | Adds reasons for confirming sale orders
 [sy_sale_order_mandate_position](sy_sale_order_mandate_position/) | 18.0.1.0.0 |  | Moves the direct debit mandate next to the payment mode on sale orders
+[sy_sale_order_type_confirm_reason](sy_sale_order_type_confirm_reason/) | 18.0.1.0.0 |  | Configure confirmation reasons by sale order type
 
 [//]: # (end addons)
 
