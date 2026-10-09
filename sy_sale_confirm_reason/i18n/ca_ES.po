@@ -1,0 +1,195 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sy_sale_confirm_reason
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-08 13:22+0000\n"
+"PO-Revision-Date: 2026-10-08 15:26+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ca_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.9\n"
+
+#. module: sy_sale_confirm_reason
+#. odoo-python
+#: code:addons/sy_sale_confirm_reason/models/sale_confirm_reason.py:0
+msgid "%s (copy)"
+msgstr "%s (Còpia)"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__details
+msgid "Additional Information"
+msgstr "Informació addicional"
+
+#. module: sy_sale_confirm_reason
+#. odoo-python
+#: code:addons/sy_sale_confirm_reason/wizards/sale_confirm_reason_wizard.py:0
+msgid "Additional information is required for this reason."
+msgstr "Es requereix informació addicional per a aquest motiu."
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason__allow_manual_text
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__allow_manual_text
+msgid "Allow Manual Text"
+msgstr "Permet text manual"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,help:sy_sale_confirm_reason.field_res_company__sale_confirm_reason
+#: model:ir.model.fields,help:sy_sale_confirm_reason.field_res_config_settings__sale_confirm_reason
+#: model_terms:ir.ui.view,arch_db:sy_sale_confirm_reason.res_config_settings_view_form_sale_confirm_reason
+msgid "Ask for a reason when confirming a sales order."
+msgstr "Demana un motiu en confirmar una comanda de venda."
+
+#. module: sy_sale_confirm_reason
+#: model_terms:ir.ui.view,arch_db:sy_sale_confirm_reason.view_sale_confirm_reason_wizard_form
+msgid "Cancel"
+msgstr "Cancel·lar"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model,name:sy_sale_confirm_reason.model_res_company
+msgid "Companies"
+msgstr "Empreses"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason__company_id
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__company_id
+msgid "Company"
+msgstr "Companyia"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model,name:sy_sale_confirm_reason.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paràmetres de configuració"
+
+#. module: sy_sale_confirm_reason
+#: model_terms:ir.ui.view,arch_db:sy_sale_confirm_reason.view_sale_confirm_reason_wizard_form
+msgid "Confirm"
+msgstr "Confirma"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.actions.server,name:sy_sale_confirm_reason.action_sale_order_mass_confirm
+msgid "Confirm Orders"
+msgstr "Confirmar comandes"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_order__confirm_reason_id
+msgid "Confirmation"
+msgstr "Confirmació"
+
+#. module: sy_sale_confirm_reason
+#. odoo-python
+#: code:addons/sy_sale_confirm_reason/models/sale_order.py:0
+#: model_terms:ir.ui.view,arch_db:sy_sale_confirm_reason.view_sale_confirm_reason_wizard_form
+msgid "Confirmation Reason"
+msgstr "Motiu de la confirmació"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.ui.menu,name:sy_sale_confirm_reason.menu_sale_confirm_reason
+msgid "Confirmation Reasons"
+msgstr "Motius de la confirmació"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason__create_uid
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__create_uid
+msgid "Created by"
+msgstr "Creat per"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason__create_date
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__create_date
+msgid "Created on"
+msgstr "Creat en"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_order__confirm_reason_details
+msgid "Details"
+msgstr "Detalls"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason__display_name
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__display_name
+msgid "Display Name"
+msgstr "Nom mostrat"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason__id
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason__write_uid
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Última actualització per"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason__write_date
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__write_date
+msgid "Last Updated on"
+msgstr "Última actualització el"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason__manual_text_required
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__manual_text_required
+msgid "Manual Text Required"
+msgstr "Cal introduir el text manualment"
+
+#. module: sy_sale_confirm_reason
+#. odoo-python
+#: code:addons/sy_sale_confirm_reason/models/sale_confirm_reason.py:0
+msgid "No additional information is required."
+msgstr "No es requereix informació addicional."
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__order_ids
+msgid "Order"
+msgstr "Comanda"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason__name
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_sale_confirm_reason_wizard__reason_id
+msgid "Reason"
+msgstr "Motiu"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model,name:sy_sale_confirm_reason.model_sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_res_company__sale_confirm_reason
+#: model:ir.model.fields,field_description:sy_sale_confirm_reason.field_res_config_settings__sale_confirm_reason
+#: model_terms:ir.ui.view,arch_db:sy_sale_confirm_reason.res_config_settings_view_form_sale_confirm_reason
+#: model_terms:ir.ui.view,arch_db:sy_sale_confirm_reason.view_sale_confirm_reason_form
+msgid "Sale Confirmation Reason"
+msgstr "Motiu de la confirmació de la venda"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model,name:sy_sale_confirm_reason.model_sale_confirm_reason_wizard
+msgid "Sale Confirmation Reason Wizard"
+msgstr "Motiu de la confirmació de la venda Wizard"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.actions.act_window,name:sy_sale_confirm_reason.action_sale_confirm_reason
+msgid "Sale Confirmation Reasons"
+msgstr "Motius de la confirmació de venda"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model,name:sy_sale_confirm_reason.model_sale_order
+msgid "Sales Order"
+msgstr "Comandas"
+
+#. module: sy_sale_confirm_reason
+#: model:ir.model.constraint,message:sy_sale_confirm_reason.constraint_sale_confirm_reason_name_uniq
+msgid "The confirmation reason must be unique."
+msgstr "El motiu de confirmació ha de ser únic."
+
+#. module: sy_sale_confirm_reason
+#. odoo-python
+#: code:addons/sy_sale_confirm_reason/wizards/sale_confirm_reason_wizard.py:0
+msgid "The confirmation reason must belong to the order company."
+msgstr "El motiu de confirmació ha de pertànyer a l'empresa de la comanda."
